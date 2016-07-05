@@ -23,7 +23,7 @@ When you went to that URL your browser made a HTTP `GET` request and recieved a 
 
 *GET request*: The most common type of HTTP request. Simply says you want to 'get' the information the URL relates to. We normally write `GET` all uppercase, though the letters don't stand for anything. There are other HTTP verbs for creating, updating, and deleting pages, but we won't be using those here.
 
-*`200 OK` response*: After making a HTTP request you recieve a response from the server. HTTP responses always include a three-digit code indicating whether your request was successful or not. Requests that start with a `2` indicate that everything is fine, with a `4` indicate that you made a mistake, or with a `5` indicate that something has gone wrong on the server. You probably have come across a `404 Not Found` or perhaps a `503 Service Unavailable` response on the web before, but a `200 OK` is the normal respnose to a successful request. Wikipedia has [a full list] (https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) of all the possible codes, though most are quite rare.
+*`200 OK` response*: After making a HTTP request you recieve a response from the server. HTTP responses always include a three-digit code indicating whether your request was successful or not. Requests that start with a `2` indicate that everything is fine, with a `4` indicate that you made a mistake, or with a `5` indicate that something has gone wrong on the server. You probably have come across a `404 Not Found` or perhaps a `503 Service Unavailable` response on the web before, but a `200 OK` is the normal response to a successful request. Wikipedia has [a full list] (https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) of all the possible codes, though most are quite rare.
 
 
 Automating it
@@ -42,21 +42,21 @@ Python comes with a tool called Pip for installing extra libraries. To start wit
 Back in your code editor start a new file and import `requests` as well as the `sys`, `csv`, and `json` libraries which come with Python:
 
 ```python
-    import sys
-    import csv
-    import json
-    import requests
+import sys
+import csv
+import json
+import requests
 ```
 
 Underneath that lets write a `lookup` function to call the Opencorporates API with a jurisdiction and company number and return the results:
 
 ```python
-    def lookup(jurisdiction, number):
-        url = 'http://api.opencorporates.com/v0.4.5/companies/' + jurisdiction + '/' + number
-        response = requests.get(url)
-        if response.status_code == 200:
-            data = json.loads(response.content)
-            return data['results']['company']
+def lookup(jurisdiction, number):
+    url = 'http://api.opencorporates.com/v0.4.5/companies/' + jurisdiction + '/' + number
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = json.loads(response.content)
+        return data['results']['company']
 ```
 
 How did we know that this is the URL we need? APIs typically have a documentation site. Reading through the [Opencorporates API documentation] (https://api.opencorporates.com/documentation/API-Reference) tells us the different types of request that Opencorporates accepts and what response you should expect.
@@ -64,7 +64,7 @@ How did we know that this is the URL we need? APIs typically have a documentatio
 To check that everything works so far lets add some code so we can just call our `lookup` function:
 
 ```python
-    print(lookup(sys.argv[1], sys.argv[2]))
+print(lookup(sys.argv[1], sys.argv[2]))
 ```
 
 This calls the `lookup` function with the first two arguments from the terminal, and prints the result.
