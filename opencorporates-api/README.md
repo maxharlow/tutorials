@@ -26,8 +26,8 @@ When you went to that URL your browser made a HTTP `GET` request and recieved a 
 *`200 OK` response*: After making a HTTP request you recieve a response from the server. HTTP responses always include a three-digit code indicating whether your request was successful or not. Requests that start with a `2` indicate that everything is fine, with a `4` indicate that you made a mistake, or with a `5` indicate that something has gone wrong on the server. You probably have come across a `404 Not Found` or perhaps a `503 Service Unavailable` response on the web before, but a `200 OK` is the normal response to a successful request. Wikipedia has [a full list] (https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) of all the possible codes, though most are quite rare.
 
 
-Automating it
--------------
+Automatic lookups
+-----------------
 
 We are now going to use Python to automatically make hundreds of HTTP requests, and extract information from the Json in each response into a spreadsheet.
 
@@ -52,14 +52,26 @@ Underneath that lets write a `lookup` function to call the Opencorporates API wi
 
 ```python
 def lookup(jurisdiction, number):
-    url = 'http://api.opencorporates.com/v0.4.5/companies/' + jurisdiction + '/' + number
+    url = 'http://api.opencorporates.com/companies/' + jurisdiction + '/' + number
     response = requests.get(url)
     if response.status_code == 200:
         data = json.loads(response.content)
-        return data['results']['company']
+        company = data['results']['company']
+        return {
+            'name': company['name'],
+            'type': company['company_type'],
+            'incorporated': company['incorporation_date'],
+            'address': company['registered_address_in_full']
+        }
+    else:
+        print('Error: ' + response.status_code)
 ```
 
+This function creates a URL for a given jurisdiction code and company number and makes a HTTP request. If it recieves anything but a `200 OK` response it prints out an error message. Otherwise it pulls out a few key fields from the API response and returns those.
+
 How did we know that this is the URL we need? APIs typically have a documentation site. Reading through the [Opencorporates API documentation] (https://api.opencorporates.com/documentation/API-Reference) tells us the different types of request that Opencorporates accepts and what response you should expect.
+
+In this case we are looking up a company using their jurisdiction and company number. The jurisdiction is a a two-letter code for each of the different bits of the world which has its own company registry -- in most cases countries, but sometimes states or cities. Since each registry has its own way of numbering companies we need both bits of information to accurately look up a specific company.
 
 To check that everything works so far lets add some code so we can just call our `lookup` function:
 
@@ -79,8 +91,45 @@ If you now list all the files in the folder:
 
 You should see `oclookup.py` listed.
 
-Now we'll run our file and look up Tesco Plc again:
+Now we'll run our file and pass it the details for Tesco Plc again:
 
     $ python oclookup.py gb 00445790
 
-You should see all the data from the API we looked up before in the browser printed to your terminal. This is good!
+You should see some information on the company printed out to the terminal. This is good!
+
+
+Putting it on loop
+------------------
+
+Now lets modify our program to look up a whole list of companies instead of one.
+
+Beneath the `lookup` function create a new function called `batch`:
+
+```python
+def batch(filename):
+    results = []
+    with open(filename, 'rb') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            result = lookup(row['jurisdiction'], row['number'])
+            results.append(result)
+    return results
+```
+
+This function expects a CSV file with two columns, `jurisdiction` and `number`. It opens the file and calls the `lookup` function with the information from each row. After each lookup it adds the result to a list. When all rows have been looked up the results are returned.
+
+*CSV*: A simple spreadsheet format.
+
+Remove the last line of the file that we added before. Replace it with:
+
+```python
+print(batch(sys.argv[1]))
+```
+
+Now lets try running our program again, but this time with a file as input. Download [this list of companies] (https://raw.githubusercontent.com/maxharlow/tutorials/master/opencorporates-api/companies.csv) and move it into your project folder.
+
+Then run:
+
+    $ python oclookup.py companies.csv
+
+You should see information for each of the companies listed in `companies.csv` printed out to the terminal.
