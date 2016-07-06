@@ -19,19 +19,19 @@ https://api.opencorporates.com/companies/gb/00445790
 
 That is Json. If you look closely you can see much of the same data that was available on the web page above, although in a less human-readable way. Lets pause for a moment and understand what has happened here.
 
-When you went to that URL, your browser made a HTTP `GET` request and recieved a `200 OK` response. What does that mean?
+When you went to that URL, your browser made a HTTP `GET` request and recieved a `200 OK` response. But what does that mean?
 
 ***HTTP***: Those four letters at the start of every URL. This is the technology responsible for transmitting information between clients such as us and servers. There are different types of HTTP requests.
 
 ***GET request***: The most common type of HTTP request. Simply says you want to 'get' the information the URL relates to. We normally write `GET` all uppercase, though the letters don't stand for anything. There are other HTTP verbs for creating, updating, and deleting pages, but we won't be using those here.
 
-***`200 OK` response***: After making an HTTP request, you will recieve a response from the server. HTTP responses always include a three-digit code indicating whether your request was successful or not. Requests that start with a `2` indicate that everything is fine, with a `4` indicate that you made a mistake, and a `5` indicate that something has gone wrong on the server side. You probably have come across a `404 Not Found` or perhaps a `503 Service Unavailable` response on the web before, but a `200 OK` is the normal response to a successful request. Wikipedia has [a full list](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) of all the possible codes, though most are quite rare.
+***`200 OK` response***: After making an HTTP request, you will recieve a response from the server. HTTP responses always include a three-digit code indicating whether your request was successful or not. Requests that start with a `2` indicate that everything is fine, with a `4` indicate that you made a mistake, and with a `5` indicate that something has gone wrong on the server side. You probably have come across a `404 Not Found` or perhaps a `503 Service Unavailable` response on the web before, but a `200 OK` is the normal response to a successful request. Wikipedia has [a full list](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) of all the possible codes, though most are quite rare.
 
 
 Automatic lookups
 -----------------
 
-We are now going to use Python to automatically make hundreds of HTTP requests, and extract information from the Json in each response into a spreadsheet.
+We are now going to use Python to automatically make multiple HTTP requests, and extract information from the Json in each response into a spreadsheet.
 
 Firstly you will need to [install Python](https://www.python.org/downloads/) if you do not have it already. You will also need a code editor such as [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/).
 
@@ -71,7 +71,7 @@ def lookup(jurisdiction, number):
 
 How did we know that this is the URL we need? APIs typically have a documentation site. Reading through the [Opencorporates API documentation](https://api.opencorporates.com/documentation/API-Reference) tells us the different types of request that Opencorporates accepts and what response you should expect.
 
-In this case we are looking up a company using their jurisdiction and company number. The jurisdiction is a a two-letter code for each of the different bits of the world that have their own company registry -- in most cases countries, but sometimes states or cities. Since each registry has its own way of numbering companies, we need both bits of information to accurately look up a specific company.
+In this case we are looking up a company using their jurisdiction and company number. The jurisdiction is a two-letter code for each of the different bits of the world that have their own company registry -- in most cases countries, but sometimes states or cities. Since each registry has its own numbering system, we need both bits of information to accurately look up a specific company.
 
 To check that everything works so far lets add some code so we can call our `lookup` function. This calls the `lookup` function with the first two arguments from the terminal, and prints the result:
 
@@ -89,7 +89,7 @@ If you now list all the files in the folder:
 
 You should see `oclookup.py`.
 
-Now we'll run our file and pass it the details for Tesco Plc again:
+Now run our file and pass it the details for Tesco Plc:
 
     $ python oclookup.py gb 00445790
 
@@ -114,31 +114,31 @@ def from_file(filename):
     return results
 ```
 
-Remove the last line of the file that we added before. Replace it with:
+Remove the last line of the file that we added before and replace it with:
 
 ```python
 print(from_file(sys.argv[1]))
 ```
 
-Now let's try running our program again, but this time with a file as the input. Download [this list of companies](https://raw.githubusercontent.com/maxharlow/tutorials/master/opencorporates-api/company-numbers.csv) and move it into your project folder.
+Now let's try running our program again, but this time with a file as the input. Download [this list of companies](https://raw.githubusercontent.com/maxharlow/tutorials/master/opencorporates-api/company-numbers.csv) and move it into your project folder. This is a list of all the companies who donated to the Vote Leave campaign during the EU referendum. But who were they?
 
-Then run:
+To find out, run:
 
     $ python oclookup.py company-numbers.csv
 
-You should see information for each of the companies listed in `company-numbers.csv` printed out to the terminal.
+You should see information for each of the companies printed out to the terminal.
 
 
 Dealing with rate limits
 ------------------------
 
-At this point we might start to see our program printing out `403` errors. We can avoid this by passing an API key with our requests. [Sign up for a Opencorporates API key.](https://opencorporates.com/api_accounts/new)
+At this point you might start to see `403` errors being printed out. We can avoid this by passing an API key with our requests. [Sign up for a Opencorporates API key.](https://opencorporates.com/api_accounts/new)
 
 ***Rate limit***: Often used by APIs to say how many requests can be made by one person within a given period of time. For Opencorporates [we are limited to 500 requests a month](https://api.opencorporates.com/documentation/API-Reference#usage_limits) unless we use an API key.
 
-***API key***: A code sent with each request to let an API track what requests you are making. For some APIs, having a key is mandatory.
+***API key***: A code sent with each request to let an API track how many requests you are making. Having a key is mandatory for many APIs.
 
-To send your API key with each request modfiy the `url` variable in the `lookup` function to be:
+To send your API key with each request we need to modify the `url` variable in the `lookup` function to be:
 
 ```python
 key = 'YOUR-API-KEY-HERE'
@@ -174,12 +174,12 @@ Run your program again:
 
     $ python oclookup.py company-numbers.csv
 
-You should now see nothing printed out to the terminal this time. However there should be a new `company-details.csv` file in the same folder. Open it up and check all your results are there.
+You should now see nothing printed out to the terminal this time. However there should be a new `company-details.csv` file in the same folder. Open it up and you should see details for each of the companies.
 
 
 Challenge: Getting the officers
 -------------------------------
 
-One other bit of information Opencorporates holds is a list of officers for each company -- including their directors. Can you modify your program to create a list of all the officers of all the companies in `company-numbers.csv` instead?
+One other bit of information Opencorporates holds is a list of officers for each company -- including their directors. Can you modify your program to create a list of all the officers of all the companies in `company-numbers.csv` instead? Can we find who the people were behind the companies who funded Vote Leave?
 
 The [Opencorporates API documentation](https://api.opencorporates.com/documentation/API-Reference) may help if you get stuck.

@@ -1,4 +1,27 @@
-jurisdiction,number
-gb,00445790
-pa,555486
-im,021797B
+jurisdiction,number,id,recipientName,value,receivedDate
+gb,9335876,C0243216,Vote Leave Limited,"£25,000.00",09/05/2016
+gb,336600,C0243191,Vote Leave Limited,"£25,000.00",27/04/2016
+gb,561597,C0243557,Vote Leave Limited,"£100,000.00",10/06/2016
+gb,1617146,C0242477,Vote Leave Limited,"£10,000.00",29/02/2016
+gb,1269717,C0243204,Vote Leave Limited,"£850,000.00",25/04/2016
+gb,9785255,C0243056,Labour Leave Limited,"£15,000.00",12/02/2016
+gb,9856324,C0242476,Vote Leave Limited,"£15,000.00",23/02/2016
+gb,1334260,C0243203,Vote Leave Limited,"£25,000.00",04/05/2016
+gb,1617146,C0243359,Vote Leave Limited,"£25,000.00",19/05/2016
+gb,929686,C0242445,Vote Leave Limited,"£12,000.00",18/04/2016
+gb,2353697,C0242463,Vote Leave Limited,"£24,000.00",01/04/2016
+gb,9785255,C0243512,Muslims for GB Limited,"£10,000.00",20/06/2016
+gb,1996942,C0243219,Vote Leave Limited,"£12,000.00",12/05/2016
+gb,4603075,C0243202,Vote Leave Limited,"£10,000.00",11/05/2016
+gb,7306402,C0242482,Vote Leave Limited,"£50,000.00",12/04/2016
+gb,2278367,C0242456,Vote Leave Limited,"£50,000.00",15/04/2016
+gb,2641767,C0242481,Vote Leave Limited,"£50,000.00",17/03/2016
+gb,561597,C0243559,Vote Leave Limited,"£100,000.00",16/06/2016
+gb,2089582,C0243218,Vote Leave Limited,"£25,000.00",11/05/2016
+gb,6597608,C0243206,Vote Leave Limited,"£10,000.00",03/05/2016
+gb,561597,C0243369,Vote Leave Limited,"£100,000.00",31/05/2016
+gb,561597,C0243205,Vote Leave Limited,"£100,000.00",10/05/2016
+gb,4230744,C0242473,Vote Leave Limited,"£10,000.00",05/04/2016
+gb,561597,C0243558,Vote Leave Limited,"£100,000.00",14/06/2016
+gb,1617146,C0242478,Vote Leave Limited,"£10,000.00",04/04/2016
+gb,561597,C0243356,Vote Leave Limited,"£100,000.00",18/05/2016
