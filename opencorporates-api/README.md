@@ -83,6 +83,8 @@ Now to try running the first part of our program. Create a new folder somewhere 
 
     $ cd ~/Documents/journocoders
 
+*Tip:* Files and folders with spaces in them are fiddly to deal with in the terminal. We often name things using hyphens and underscores to avoid these problems.
+
 If you now list all the files in the folder:
 
     $ ls
