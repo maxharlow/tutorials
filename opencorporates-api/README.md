@@ -17,13 +17,11 @@ We can make our first request to the Opencorporates API by going here in your br
 
 https://api.opencorporates.com/companies/gb/00445790
 
-That is Json. If you look closely you can see much of the same data that was available on the web page above, though it is perhaps not as readable.
-
-Lets pause for a moment and understand what has happened here.
+That is Json. If you look closely you can see much of the same data that was available on the web page above, though it is perhaps not as readable. Lets pause for a moment and understand what has happened here.
 
 When you went to that URL your browser made a HTTP `GET` request and recieved a `200 OK` response. What does that mean?
 
-***HTTP***: Those four letters at the start of every URL. This is the technology responsible for transmitting information between clients such as us and servers. There are different types of HTTP request for getting information.
+***HTTP***: Those four letters at the start of every URL. This is the technology responsible for transmitting information between clients such as us and servers. There are different types of HTTP request.
 
 ***GET request***: The most common type of HTTP request. Simply says you want to 'get' the information the URL relates to. We normally write `GET` all uppercase, though the letters don't stand for anything. There are other HTTP verbs for creating, updating, and deleting pages, but we won't be using those here.
 
@@ -93,7 +91,7 @@ If you now list all the files in the folder:
 
     $ ls
 
-You should see `oclookup.py` listed.
+You should see `oclookup.py`.
 
 Now we'll run our file and pass it the details for Tesco Plc again:
 
@@ -107,10 +105,10 @@ Putting it on loop
 
 Now lets modify our program to look up a whole list of companies instead of one.
 
-Beneath the `lookup` function create a new function called `batch`:
+Beneath the `lookup` function create a new function called `from_file`:
 
 ```python
-def batch(filename):
+def from_file(filename):
     results = []
     with open(filename, 'rb') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -127,13 +125,61 @@ This function expects a CSV file with two columns, `jurisdiction` and `number`. 
 Remove the last line of the file that we added before. Replace it with:
 
 ```python
-print(batch(sys.argv[1]))
+print(from_file(sys.argv[1]))
 ```
 
-Now lets try running our program again, but this time with a file as input. Download [this list of companies] (https://raw.githubusercontent.com/maxharlow/tutorials/master/opencorporates-api/companies.csv) and move it into your project folder.
+Now lets try running our program again, but this time with a file as input. Download [this list of companies] (https://raw.githubusercontent.com/maxharlow/tutorials/master/opencorporates-api/company-numbers.csv) and move it into your project folder.
 
 Then run:
 
-    $ python oclookup.py companies.csv
+    $ python oclookup.py company-numbers.csv
 
-You should see information for each of the companies listed in `companies.csv` printed out to the terminal.
+You should see information for each of the companies listed in `company-numbers.csv` printed out to the terminal.
+
+
+Dealing with rate limits
+------------------------
+
+At this point we might start to see our program printing out `403` errors. We can avoid this by passing an API key with our requests. [Sign up for a Opencorporates API key.] (https://opencorporates.com/api_accounts/new)
+
+***Rate limit***: Often used by APIs to say how many requests can be made by one person within a given period of time. For Opencorporates [we are limited to 500 requests a month] (https://api.opencorporates.com/documentation/API-Reference#usage_limits) unless we use an API key.
+
+***API key***: A code which is passed with each request to let an API track what requests you are making. For some APIs having a key is mandatory.
+
+Then modfiy your `url` variable in the `lookup` function to be:
+
+```python
+key = 'YOUR-API-KEY-HERE'
+url = 'http://api.opencorporates.com/companies/' + jurisdiction + '/' + number + '?api_token=' + key
+```
+
+If you run your program again it should run successfully without producing any `403` errors.
+
+
+Getting a file back
+-------------------
+
+At this stage we are making our requests successfully, but it would be much better if the data went into a CSV file for later analysis.
+
+Add a new `to_file` function beneath `from_file`:
+
+```python
+def to_file(results):
+    with open('company-details.csv', 'wb') as csvfile:
+        header = results[0].keys()
+        writer = csv.DictWriter(csvfile, header)
+        writer.writeheader()
+        writer.writerows(results)
+```
+
+Change the last line to call `to_file` instead of `print`:
+
+```python
+to_file(from_file(sys.argv[1]))
+```
+
+Run your program again:
+
+    $ python oclookup.py company-numbers.csv
+
+You should see nothing printed out to the terminal this time. However there should be a new `company-details.csv` file in the same folder. Open it up and check all your results are there!
