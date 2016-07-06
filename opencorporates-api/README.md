@@ -3,7 +3,7 @@ Using the Opencorporates API
 
 In this tutorial we're going to cover what an API is, and how we can use the OpenCorporates API as part of a data-driven investigation.
 
-***[Opencorporates](https://opencorporates.com/)***: An independent company which has scraped many of the world's company registries - such as the UK's [Companies House] - (https://beta.companieshouse.gov.uk/) into a single easily-searchable database. For example, [this] (https://opencorporates.com/companies/gb/00445790) is the entry for Tesco Plc.
+***[Opencorporates](https://opencorporates.com/)***: An independent company which has scraped many of the world's company registries - such as the UK's [Companies House](https://beta.companieshouse.gov.uk/) into a single easily-searchable database. For example, [this](https://opencorporates.com/companies/gb/00445790) is the entry for Tesco Plc.
 
 ***API***: Stands for Application Programming Interface. If websites are human interfaces, APIs are the interfaces for machines. Instead of serving up web pages, APIs serve up data, often in a file format called 'Json'. Unlike web pages, APIs have no styling or colouring. They do, however, provide data in an easy-to-use format, without resorting to scraping. In this case we will be using OpenCorporates' API to automate looking up companies in their database.
 
