@@ -16,7 +16,7 @@ def lookup(jurisdiction, number):
             'address': company['registered_address_in_full']
         }
     else:
-        print('Error: ' + response.status_code)
+        print('Error: ' + str(response.status_code))
 
 def from_file(filename):
     results = []

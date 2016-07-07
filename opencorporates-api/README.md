@@ -66,7 +66,7 @@ def lookup(jurisdiction, number):
             'address': company['registered_address_in_full']
         }
     else:
-        print('Error: ' + response.status_code)
+        print('Error: ' + str(response.status_code))
 ```
 
 How did we know that this is the URL we need? APIs typically have a documentation site. Reading through the [Opencorporates API documentation](https://api.opencorporates.com/documentation/API-Reference) tells us the different types of request that Opencorporates accepts and what response you should expect.
