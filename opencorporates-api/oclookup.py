@@ -7,7 +7,7 @@ def lookup(jurisdiction, number):
     url = 'http://api.opencorporates.com/companies/' + jurisdiction + '/' + number
     response = requests.get(url)
     if response.status_code == 200:
-        data = json.loads(response.content)
+        data = json.loads(response.text)
         company = data['results']['company']
         return {
             'name': company['name'],
@@ -20,7 +20,7 @@ def lookup(jurisdiction, number):
 
 def from_file(filename):
     results = []
-    with open(filename, 'rb') as csvfile:
+    with open(filename, 'r') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             result = lookup(row['jurisdiction'], row['number'])
@@ -28,7 +28,7 @@ def from_file(filename):
     return results
 
 def to_file(results):
-    with open('company-details.csv', 'wb') as csvfile:
+    with open('company-details.csv', 'w') as csvfile:
         header = results[0].keys()
         writer = csv.DictWriter(csvfile, header)
         writer.writeheader()
