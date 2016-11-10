@@ -37,8 +37,17 @@ Next download and run [Postico] (https://eggerapps.at/postico/), a Postgres clie
 
 ### Windows
 
-(todo)
+Simply [download the PostgreSQL installer](http://get.enterprisedb.com/postgresql/postgresql-9.6.1-1-windows-x64.exe) from EnterpriseDB. The default settings should work fine. The installer will offer to install StackBuilder too, but you don't need it.
 
+Once it's installed, go to Start > Run > PostgreSQL 9.6 > pgAdmin 4. pgAdmin is a PostgreSQL client which gives us a visual interface for writing and running our SQL queries.
+
+### Linux
+
+On a Debian-based Linux distribution, run:
+
+```sudo apt-get install postgresql pgadmin3```
+
+This will install the PostgreSQL server and the pgAdmin III client.
 
 Creating a database
 -------------------
