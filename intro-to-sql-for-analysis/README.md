@@ -226,7 +226,7 @@ Using aggregate functions we can divide up our data into different groups. In Ex
 
 ```sql
 SELECT type, count(*) FROM crimes
-GROUP BY type,
+GROUP BY type
 ORDER BY count(*) DESC;
 ```
 
