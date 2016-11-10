@@ -107,7 +107,7 @@ To run the import we need to know exactly where the CSV files we downloaded are:
 
 | Mac or Linux | Windows |
 | --- | --- |
-| <div>In the terminal use `cd` navigate to where your file is, probably `~/Documents`. Run `pwd` to get the directory location, then `ls` to get a list of all the files there. The full location of your file is the directory location plus a `/`, then the file name. It will look something like this:</div><div>`~/Documents/2016-09-metropolitan-street.csv`</div> | <div>Click Start > Computer. Navigate to your Downloads folder or wherever you downloaded the CSV file. Right-click in the address bar and select 'Copy address as text'. Paste the address into your SQL query, adding a `\` at the end followed by the filename of the CSV file. It will look something like this:</div><div>`C:\Users\tom\Downloads\2016-09-metropolitan-street.csv`</div> |
+| <div>In the terminal use `cd` navigate to where your file is, probably `~/Documents`. Run `pwd` to get the directory location, then `ls` to get a list of all the files there. The full location of your file is the directory location plus a `/`, then the file name. It will look something like this:</div><div>`~/Documents/2016-09-metropolitan-street.csv`</div> | <div>Click Start > Computer. Navigate to your Downloads folder or wherever you extracted the CSV file. Right-click in the address bar and select 'Copy address as text'. Paste the address into your SQL query, adding a `\` at the end followed by the filename of the CSV file. It will look something like this:</div><div>`C:\Users\tom\Downloads\2016-09-metropolitan-street.csv`</div> |
 
 Replace `<location>` in the query below with the location of your data to start the import:
 
