@@ -76,9 +76,9 @@ You can now disconnect from the `postgres` database and connect to the `crime` o
 Getting your data in
 --------------------
 
-We are going to be looking at crime. Go to [the data section of data.police.uk] (https://data.police.uk/data/) and select a police force you are interested in and generate your download. You should end up with a CSV file.
+We are going to be looking at crime. Go to [the data section of data.police.uk] (https://data.police.uk/data/) and select a police force you are interested in and generate your download. Open the .zip file and extract it to your Documents folder or another convenient location. You should end up with a CSV file.
 
-If you open the data file in Excel you might notice it's quite nice clean data -- CSV format, no colours or other formatting, no full-width title rows, etc. Though SQL is great for querying data, it's not so great for cleaning it. If your data did need cleaning it would probably be easier to run in through a tool such as [OpenRefine] (http://openrefine.org/) at this point.
+If you open the CSV file in Excel you might notice it's quite nice clean data -- CSV format, no colours or other formatting, no full-width title rows, etc. Though SQL is great for querying data, it's not so great for cleaning it. If your data did need cleaning it would probably be easier to run in through a tool such as [OpenRefine] (http://openrefine.org/) at this point.
 
 Before we actually import the the main crime dataset we first need to create a table for it to go in:
 
@@ -101,11 +101,13 @@ CREATE TABLE crimes(
 
 Here we have specifed names for each column -- converted from the spreadsheet to use camelCase. Though column names are allowed to contain spaces if surrounded by `"` that soon gets irritating so typically column names use either camelCase or underscore_case to delimit words.
 
-We also need to require a type for each column. The [Postgres website lists all the different types] (https://www.postgresql.org/docs/current/static/datatype.html#DATATYPE-TABLE), though in most cases you only need to know the common ones -- as well as `text` there is `integer` for whole numbers, `float` for decimal numbers, and `boolean` for true/false values. There are also some types for dealing with dates and times, though they require some special handling which we aren't going to get into here.
+We also need to require a type for each column. The [Postgres website lists all the different types](https://www.postgresql.org/docs/current/static/datatype.html#DATATYPE-TABLE), though in most cases you only need to know the common ones -- as well as `text` there is `integer` for whole numbers, `float` for decimal numbers, and `boolean` for true/false values. There are also some types for dealing with dates and times, though they require some special handling which we aren't going to get into here.
 
 To run the import we need to know exactly where the CSV files we downloaded are:
-* **Mac:** In the terminal use `cd` navigate to where your file is, probably `~/Downloads`. Run `pwd` to get the directory location, then `ls` to get a list of all the files there. The full location of your file is the directory location plus a `/`, then the file name.
-* **Windows:** (todo)
+
+| Mac or Linux | Windows |
+| --- | --- |
+| <div>In the terminal use `cd` navigate to where your file is, probably `~/Documents`. Run `pwd` to get the directory location, then `ls` to get a list of all the files there. The full location of your file is the directory location plus a `/`, then the file name. It will look something like this:</div><div>`~/Documents/2016-09-metropolitan-street.csv`</div> | <div>Click Start > Computer. Navigate to your Downloads folder or wherever you downloaded the CSV file. Right-click in the address bar and select 'Copy address as text'. Paste the address into your SQL query, adding a `\` at the end followed by the filename of the CSV file. It will look something like this:</div><div>`C:\Users\tom\Downloads\2016-09-metropolitan-street.csv`</div> |
 
 Replace `<location>` in the query below with the location of your data to start the import:
 
