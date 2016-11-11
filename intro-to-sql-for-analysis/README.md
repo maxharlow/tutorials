@@ -46,7 +46,7 @@ Once it's installed, go to Start > Run > PostgreSQL 9.6 > pgAdmin 4. pgAdmin is 
 On a Debian-based Linux distribution, install Postgres and pgAdmin:
 
 ```bash
-sudo apt-get install postgresql pgadmin3
+$ sudo apt-get install postgresql pgadmin3
 ```
 
 Once it's installed run pgAdmin, which is a Postgres client which gives us a visual interface for writing and running our SQL queries.
