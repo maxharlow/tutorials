@@ -1,5 +1,5 @@
-Introduction to SQL for Analysis
-================================
+SQL for Analysis
+================
 
 In this tutorial we are going to import some data into a relational database, and answer a few questions from it by writing SQL queries.
 

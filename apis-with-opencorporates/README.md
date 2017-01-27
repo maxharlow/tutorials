@@ -1,5 +1,5 @@
-Using the Opencorporates API
-============================
+APIs with Opencorporates
+========================
 
 In this tutorial we are going to cover what an API is, and how you can use the Opencorporates API as part of a data-driven investigation.
 
