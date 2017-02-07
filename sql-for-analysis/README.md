@@ -21,15 +21,11 @@ If you don't already have Homebrew, follow the instructions [on its website] (ht
 
 Next, from the terminal install Postgres:
 
-```bash
-$ brew install postgres
-```
+    $ brew install postgres
 
 Then lets start Postgres running in the background:
 
-```bash
-$ postgres -D /usr/local/var/postgres
-```
+    $ postgres -D /usr/local/var/postgres
 
 You will need to leave that tab open. When you're finished with Postgres, press `Ctrl-C` here to shut it down.
 
@@ -45,9 +41,7 @@ Once it's installed, go to Start > Run > PostgreSQL 9.6 > pgAdmin 4. pgAdmin is 
 
 On a Debian-based Linux distribution, install Postgres and pgAdmin:
 
-```bash
-$ sudo apt-get install postgresql pgadmin3
-```
+    $ sudo apt-get install postgresql pgadmin3
 
 Once it's installed run pgAdmin, which is a Postgres client which gives us a visual interface for writing and running our SQL queries.
 
@@ -107,6 +101,7 @@ Here we have specifed names for each column -- converted from the spreadsheet to
 We also need to require a type for each column. The [Postgres website lists all the different types] (https://www.postgresql.org/docs/current/static/datatype.html#DATATYPE-TABLE), though in most cases you only need to know the common ones -- as well as `text` there is `integer` for whole numbers, `float` for decimal numbers, and `boolean` for true/false values. There are also some types for dealing with dates and times, though they require some special handling which we aren't going to get into here.
 
 To run the import we need to know exactly where the CSV files we downloaded are:
+
 * **Mac or Linux:** In the terminal use `cd` navigate to where your file is, probably `~/Downloads`. Run `pwd` to get the directory location, then `ls` to get a list of all the files there. The full location of your file is the directory location plus a `/`, then the file name. It will look something like this: `/Users/max/Downloads/2016-09-metropolitan-street.csv`.
 * **Windows:** Click Start > Computer. Navigate to where your file is, probably in your Downloads. Right-click in the address bar and select 'Copy address as text'. The full location of your file is the that text plus a `\`, then the file name. It will look something like this: `C:\Users\tom\Downloads\2016-09-metropolitan-street.csv`.
 

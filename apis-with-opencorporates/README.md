@@ -3,11 +3,11 @@ APIs with Opencorporates
 
 In this tutorial we are going to cover what an API is, and how you can use the Opencorporates API as part of a data-driven investigation.
 
-***[Opencorporates](https://opencorporates.com/)***: An independent company who has scraped many of the world's company registries, such as the UK's [Companies House](https://beta.companieshouse.gov.uk/), into a single easily-searchable database. For example, [this](https://opencorporates.com/companies/gb/00445790) is the entry for Tesco Plc.
+***[Opencorporates] (https://opencorporates.com/):*** An independent company who has scraped many of the world's company registries, such as the UK's [Companies House] (https://beta.companieshouse.gov.uk/), into a single easily-searchable database. For example, [this] (https://opencorporates.com/companies/gb/00445790) is the entry for Tesco Plc.
 
-***API***: Stands for Application Programming Interface. If websites are human interfaces, APIs are the interfaces for machines. Instead of HTML, APIs normally return Json. Unlike an HTML webpage, APIs no have no colours or other styling. They do, however, make it very easy to extract information without resorting to scraping. In this case we will be using Opencorporates' API to automate looking up companies in their database.
+***API:*** Stands for Application Programming Interface. If websites are human interfaces, APIs are the interfaces for machines. Instead of HTML, APIs normally return Json. Unlike an HTML webpage, APIs no have no colours or other styling. They do, however, make it very easy to extract information without resorting to scraping. In this case we will be using Opencorporates' API to automate looking up companies in their database.
 
-***Json***: A standard format for storing and transmitting data. Older APIs sometimes return data in XML format instead, which achieves much the same thing as Json. Many APIs support both formats.
+***Json:*** A standard format for storing and transmitting data. Older APIs sometimes return data in XML format instead, which achieves much the same thing as Json. Many APIs support both formats.
 
 
 Your first request
@@ -21,11 +21,11 @@ That is Json. If you look closely you can see much of the same data that was ava
 
 When you went to that URL, your browser made a HTTP `GET` request and recieved a `200 OK` response. But what does that mean?
 
-***HTTP***: Those four letters at the start of every URL. This is the technology responsible for transmitting information between clients such as us and servers. There are different types of HTTP requests.
+***HTTP:*** Those four letters at the start of every URL. This is the technology responsible for transmitting information between clients such as us and servers. There are different types of HTTP requests.
 
-***GET request***: The most common type of HTTP request. Simply says you want to 'get' the information the URL relates to. We normally write `GET` all uppercase, though the letters don't stand for anything. There are other HTTP verbs for creating, updating, and deleting pages, but we won't be using those here.
+***GET request:*** The most common type of HTTP request. Simply says you want to 'get' the information the URL relates to. We normally write `GET` all uppercase, though the letters don't stand for anything. There are other HTTP verbs for creating, updating, and deleting pages, but we won't be using those here.
 
-***`200 OK` response***: After making an HTTP request, you will recieve a response from the server. HTTP responses always include a three-digit code indicating whether your request was successful or not. Requests that start with a `2` indicate that everything is fine, with a `4` indicate that you made a mistake, and with a `5` indicate that something has gone wrong on the server side. You probably have come across a `404 Not Found` or perhaps a `503 Service Unavailable` response on the web before, but a `200 OK` is the normal response to a successful request. Wikipedia has [a full list](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) of all the possible codes, though most are quite rare.
+***`200 OK` response:*** After making an HTTP request, you will recieve a response from the server. HTTP responses always include a three-digit code indicating whether your request was successful or not. Requests that start with a `2` indicate that everything is fine, with a `4` indicate that you made a mistake, and with a `5` indicate that something has gone wrong on the server side. You probably have come across a `404 Not Found` or perhaps a `503 Service Unavailable` response on the web before, but a `200 OK` is the normal response to a successful request. Wikipedia has [a full list] (https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) of all the possible codes, though most are quite rare.
 
 
 Automatic lookups
@@ -33,7 +33,7 @@ Automatic lookups
 
 We are now going to use Python to automatically make multiple HTTP requests, and extract information from the Json in each response into a spreadsheet.
 
-Firstly you will need to [install Python](https://www.python.org/downloads/) if you do not have it already. You will also need a code editor such as [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/).
+Firstly you will need to [install Python] (https://www.python.org/downloads/) if you do not have it already. You will also need a code editor such as [Sublime Text] (https://www.sublimetext.com/) or [Atom] (https://atom.io/).
 
 This tutorial assumes you are using a Mac or Linux, which have access to the terminal. The `$` symbol indicates the start of a terminal command -- you don't type that though. If you look at your terminal there should be a `$` at the start of each line already. If you are using Windows everything is different and much more difficult.
 
@@ -69,7 +69,7 @@ def lookup(jurisdiction, number):
         print('Error: ' + str(response.status_code))
 ```
 
-How did we know that this is the URL we need? APIs typically have a documentation site. Reading through the [Opencorporates API documentation](https://api.opencorporates.com/documentation/API-Reference) tells us the different types of request that Opencorporates accepts and what response you should expect.
+How did we know that this is the URL we need? APIs typically have a documentation site. Reading through the [Opencorporates API documentation] (https://api.opencorporates.com/documentation/API-Reference) tells us the different types of request that Opencorporates accepts and what response you should expect.
 
 In this case we are looking up a company using their jurisdiction and company number. The jurisdiction is a two-letter code for each of the different bits of the world that have their own company registry -- in most cases countries, but sometimes states or cities. Since each registry has its own numbering system, we need both bits of information to accurately look up a specific company.
 
@@ -79,13 +79,13 @@ To check that everything works so far lets add some code so we can call our `loo
 print(lookup(sys.argv[1], sys.argv[2]))
 ```
 
-Now to try running the first part of our program. Create a new folder somewhere for your work. Inside your code editor, save the file as `oclookup.py` to that folder. In the terminal, navigate to your folder by running something like:
+Now to try running the first part of our program. Create a new directory somewhere for your work. Inside your code editor, save the file as `oclookup.py` to that directory. In the terminal, navigate to your directory by running something like:
 
     $ cd ~/Documents/journocoders
 
-*Tip:* Files and folders with spaces in them are fiddly to deal with in the terminal. We often name things using hyphens and underscores to avoid these problems.
+*Tip:* Files and directories with spaces in them are fiddly to deal with in the terminal. We often name things using hyphens and underscores to avoid these problems.
 
-If you now list all the files in the folder:
+If you now list all the files in the directory:
 
     $ ls
 
@@ -122,7 +122,7 @@ Remove the last line of the file that we added before and replace it with:
 print(from_file(sys.argv[1]))
 ```
 
-Now let's try running our program again, but this time with a file as the input. Download [this list of companies](https://raw.githubusercontent.com/maxharlow/tutorials/master/opencorporates-api/company-numbers.csv) and move it into your project folder. This is a list of all the companies who donated to the Vote Leave campaign during the EU referendum. But who were they?
+Now let's try running our program again, but this time with a file as the input. Download [this list of companies] (https://raw.githubusercontent.com/maxharlow/tutorials/master/opencorporates-api/company-numbers.csv) and move it into your project directory. This is a list of all the companies who donated to the Vote Leave campaign during the EU referendum. But who were they?
 
 To find out, run:
 
@@ -134,11 +134,11 @@ You should see information for each of the companies printed out to the terminal
 Dealing with rate limits
 ------------------------
 
-At this point you might start to see `403` errors being printed out. We can avoid this by passing an API key with our requests. [Sign up for a Opencorporates API key.](https://opencorporates.com/api_accounts/new)
+At this point you might start to see `403` errors being printed out. We can avoid this by passing an API key with our requests. [Sign up for a Opencorporates API key.] (https://opencorporates.com/api_accounts/new)
 
-***Rate limit***: Often used by APIs to say how many requests can be made by one person within a given period of time. For Opencorporates [we are limited to 500 requests a month](https://api.opencorporates.com/documentation/API-Reference#usage_limits) unless we use an API key.
+***Rate limit:*** Often used by APIs to say how many requests can be made by one person within a given period of time. For Opencorporates [we are limited to 500 requests a month] (https://api.opencorporates.com/documentation/API-Reference#usage_limits) unless we use an API key.
 
-***API key***: A code sent with each request to let an API track how many requests you are making. Having a key is mandatory for many APIs.
+***API key:*** A code sent with each request to let an API track how many requests you are making. Having a key is mandatory for many APIs.
 
 To send your API key with each request we need to modify the `url` variable in the `lookup` function to be:
 
@@ -176,7 +176,7 @@ Run your program again:
 
     $ python oclookup.py company-numbers.csv
 
-You should now see nothing printed out to the terminal this time. However there should be a new `company-details.csv` file in the same folder. Open it up and you should see details for each of the companies.
+You should now see nothing printed out to the terminal this time. However there should be a new `company-details.csv` file in the same directory. Open it up and you should see details for each of the companies.
 
 
 Challenge: Getting the officers
@@ -184,4 +184,4 @@ Challenge: Getting the officers
 
 One other bit of information Opencorporates holds is a list of officers for each company -- including their directors. Can you modify your program to create a list of all the officers of all the companies in `company-numbers.csv` instead? Can we find who the people were behind the companies who funded Vote Leave?
 
-The [Opencorporates API documentation](https://api.opencorporates.com/documentation/API-Reference) may help if you get stuck.
+The [Opencorporates API documentation] (https://api.opencorporates.com/documentation/API-Reference) may help if you get stuck.
