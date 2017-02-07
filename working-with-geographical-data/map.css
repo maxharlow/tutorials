@@ -1,0 +1,14 @@
+main {
+    margin: 0 15%;
+}
+
+path {
+    fill: gray;
+    stroke: white;
+    stroke-width: 1px;
+    cursor: pointer;
+}
+
+path.selected {
+    fill: maroon;
+}
