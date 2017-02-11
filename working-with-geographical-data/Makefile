@@ -39,7 +39,7 @@ london-5.ndjson: london-4.ndjson
 
 london-6.ndjson: london-5.ndjson
 	ndjson-map \
-		'd[0].properties = { code: d[0].properties.GSS_CODE, name: d[0].properties.NAME, incomeMedian: d[1]["Median � - 2013-14"] }, d[0]' \
+		'd[0].properties = { code: d[0].properties.GSS_CODE, name: d[0].properties.NAME, incomeMedian: d[1]["Median £ - 2013-14"] }, d[0]' \
 		< london-5.ndjson \
 		> london-6.ndjson
 

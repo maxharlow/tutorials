@@ -299,8 +299,11 @@ Download the data from the terminal:
 We can use the `csv2json` tool from the `d3-dsv` suite of tools we installed at the start to convert our CSV file to Json:
 
     $ csv2json \
+        --input-encoding 'windows-1252' \
         income-of-tax-payers.csv \
         > income-of-tax-payers.json
+
+We also pass the `--input-encoding` flag which tells it that the input file is Windows encoded. If we didn't do this some characters (such as £ signs) would come out as question marks or other gobbledygook -- a common problem when dealing with data. By doing this `csv2json` knows to convert the file to Unicode, the modern standard for file encoding which is used everywhere except on Windows.
 
 We can then split the Json apart into ND-Json with the same method we used previously:
 
@@ -333,7 +336,7 @@ So lets do that transformation:
 ```make
 london-6.ndjson: london-5.ndjson
 	ndjson-map \
-		'd[0].properties = { code: d[0].properties.GSS_CODE, name: d[0].properties.NAME, incomeMedian: d[1]["Median � - 2013-14"] }, d[0]' \
+		'd[0].properties = { code: d[0].properties.GSS_CODE, name: d[0].properties.NAME, incomeMedian: d[1]["Median £ - 2013-14"] }, d[0]' \
 		< london-5.ndjson \
 		> london-6.ndjson
 ```
@@ -505,7 +508,7 @@ Now we need to serve up these files so we can see them in our browser. There are
 
 (If you're using Windows you will need to run `choco install python` first.)
 
-Open your browser to `localhost:8000`, and let's see what it looks like. You should see a map of London! Click on a borough, you should see the name of that borough, and the median income figure appear below the title. Resize your browser, and the map should resize too.
+Open your browser to `localhost:8000/map.html`, and let's see what it looks like. You should see a map of London! Click on a borough, you should see the name of that borough, and the median income figure appear below the title. Resize your browser, and the map should resize too.
 
 It's a bit ugly though? Create a `map.css` file, and let's add some style:
 
