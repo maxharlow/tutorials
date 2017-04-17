@@ -3,7 +3,7 @@ Working with geographical data
 
 In this tutorial we are going to take a dataset containing the outlines of all the boroughs of London, and combine it with data showing average income. We will then use our combined dataset to build an interactive heatmap showing how income varies across London.
 
-We are going to use a number of tools mostly built by [Mike Bostock] (https://twitter.com/mbostock), who also wrote [the tutorial this is based on] (https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c).
+We are going to use a number of tools mostly built by [Mike Bostock](https://twitter.com/mbostock), who also wrote [the tutorial this is based on](https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c).
 
 
 Getting set up
@@ -11,7 +11,7 @@ Getting set up
 
 ### Mac
 
-If you don't already have Homebrew, follow the instructions [on its website] (http://brew.sh/) to get it installed first.
+If you don't already have Homebrew, follow the instructions [on its website](http://brew.sh/) to get it installed first.
 
 Next, from the terminal install Node:
 
@@ -29,7 +29,7 @@ If you don't already have Chocolatey, find PowerShell from the Start menu, then 
 
 (You don't include the `>` at the start, that just indicates it's a PowerShell prompt.)
 
-Then follow the instructions [on its website] (https://chocolatey.org/install) to get it installed.
+Then follow the instructions [on its website](https://chocolatey.org/install) to get it installed.
 
 From PowerShell you can then install Cygwin, Node, and Make:
 
@@ -55,7 +55,7 @@ We are not actually going to be using Node in this tutorial, however Node comes 
 
     $ npm install -g shapefile reproject d3-geo-projection d3-dsv ndjson-cli topojson
 
-You will also need a code editor such as [Sublime Text] (https://www.sublimetext.com/) or [Atom] (https://atom.io/).
+You will also need a code editor such as [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/).
 
 You should also create a directory for this project, named something like `working-with-geo-data`. Storing all the files used in this tutorial will help you keep track of what you're working on.
 
@@ -77,7 +77,7 @@ To start, create a new file in your code editor and save it with the name `Makef
 Getting the geometry
 --------------------
 
-To start with, we need the source geometry for the London borough boundaries. The [Greater London Authority] (https://www.london.gov.uk/) publishes exactly this [on the London Datastore] (https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london).
+To start with, we need the source geometry for the London borough boundaries. The [Greater London Authority](https://www.london.gov.uk/) publishes exactly this [on the London Datastore](https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london).
 
 Although we could download the data manually, we're going to do it using our first Make rule. Add the following to your Makefile:
 
@@ -105,11 +105,11 @@ Once it has finished, you should have a new directory named `source` with a whol
 
     $ ls source
 
-What we are seeing here are a number of datasets in the [Shapefile format] (https://en.wikipedia.org/wiki/Shapefile), which is commonly used by governments and other agencies to distribute geographical data. The main Shapefiles containing geometry have the `shp` extension, and the other files that have the same name but different extensions  (`shx`, `dbf`, etc) are other linked bits of data -- we will come back to these later.
+What we are seeing here are a number of datasets in the [Shapefile format](https://en.wikipedia.org/wiki/Shapefile), which is commonly used by governments and other agencies to distribute geographical data. The main Shapefiles containing geometry have the `shp` extension, and the other files that have the same name but different extensions  (`shx`, `dbf`, etc) are other linked bits of data -- we will come back to these later.
 
-We are interested in the dataset named `London_Borough_Excluding_MHW`, which gives us the geometry for each of the boroughs, excluding the MHW, or mean high water. This is an average of high tides taken over a period of years which has then been removed from the borough geometries. This is handy, as although technically the London boroughs that border the Thames extend out into the middle of the river we normally expect to see an empty void where the Thames runs when we look at a map of London. This dataset also includes geometry for the City of London, despite it [technically not being a London borough] (https://en.wikipedia.org/wiki/City_of_London).
+We are interested in the dataset named `London_Borough_Excluding_MHW`, which gives us the geometry for each of the boroughs, excluding the MHW, or mean high water. This is an average of high tides taken over a period of years which has then been removed from the borough geometries. This is handy, as although technically the London boroughs that border the Thames extend out into the middle of the river we normally expect to see an empty void where the Thames runs when we look at a map of London. This dataset also includes geometry for the City of London, despite it [technically not being a London borough](https://en.wikipedia.org/wiki/City_of_London).
 
-We can preview the Shapefile to see what we have by opening the `shp` file on [MapShaper] (http://mapshaper.org/).
+We can preview the Shapefile to see what we have by opening the `shp` file on [MapShaper](http://mapshaper.org/).
 
 
 Converting to GeoJson
@@ -150,7 +150,7 @@ Leaving the British National Grid
 
 *(Step 2)*
 
-Our data, like almost all official geographical data in the UK, was originally produced by [Ordnance Survey] (https://os.uk/), the Government-owned national mapping agency for Great Britain. (Northern Ireland is separately mapped by [Ordnance Survey Ireland] (https://www.osi.ie/), who cover the whole island.) Ordnance Survey data uses a coordinate system known as the British National Grid, or BNG.
+Our data, like almost all official geographical data in the UK, was originally produced by [Ordnance Survey](https://os.uk/), the Government-owned national mapping agency for Great Britain. (Northern Ireland is separately mapped by [Ordnance Survey Ireland](https://www.osi.ie/), who cover the whole island.) Ordnance Survey data uses a coordinate system known as the British National Grid, or BNG.
 
 Before we go any further, we're going to need to learn a little about coordinate systems.
 
@@ -166,7 +166,7 @@ There are two types of coordinate reference system:
 
 So whilst BNG, a projected coordinate reference system, is particulary good at representing Great Britain, it is useless for anywhere else in the world. Most tools expect data to use a different system, a geographical coordinate reference system called WGS84, or the World Geodetic System. (So-named because the latest version is based on measurements of the Earth taken in 1984.) This system works well for locations across the globe.
 
-**Aside:** Given that BNG is a projected coordinate reference system, you might be wondering what it is based on. It uses a geographical coordinate reference system called OSGB36, along with the [transverse mercator projection] (https://en.wikipedia.org/wiki/Transverse_Mercator_projection).
+**Aside:** Given that BNG is a projected coordinate reference system, you might be wondering what it is based on. It uses a geographical coordinate reference system called OSGB36, along with the [transverse mercator projection](https://en.wikipedia.org/wiki/Transverse_Mercator_projection).
 
 So we know that our data uses BNG, and we need to convert it to WGS84. Let's create a new rule to do that:
 
@@ -182,7 +182,7 @@ london-2.geo.json: london-1.geo.json
 
 This will create another target, this time named `london-2.geo.json`, which depends on the file we created in the previous rule. Inside, it calls the `reproject` tool we installed with NPM earier, that converts from one projection to another. To do this, we need to pass it *flags* giving the *EPSG numbers* for each of the two systems. We also pass the `--use-spatialreference` flag, which tells it to look up more unusual projections that it doesn't already know about using an online reference -- such as BNG.
 
-***EPSG numbers:*** named after the European Petroleum Survey Group who manage them, EPSG numbers are widely used by tools to identify the different coordinate reference systems. We can use [EPSG.io] (https://epsg.io/) to look up which numbers refer to which systems.
+***EPSG numbers:*** named after the European Petroleum Survey Group who manage them, EPSG numbers are widely used by tools to identify the different coordinate reference systems. We can use [EPSG.io](https://epsg.io/) to look up which numbers refer to which systems.
 
 ***Flag:*** These are how we tell a command line tool what we want it to do. They can be mandatory (like `--from` and `--to` here), without which the program would have no idea what to do, however they are more often optional (like `--use-spatialreference`). They can also be *long* or *short*. These ones are long, which means they have more than one letter, and start with two dashes at the start. However, more commonly used flags are normally given in short format, which is with a single letter, such as `-g`. Unlike long flags these can be combined -- so saying `-gh` is the same as saying `-g -h`. Many programs give long and short flags that do the same thing, so you have the choice.
 
@@ -196,7 +196,7 @@ Preparing for presentation
 
 *(Step 3)*
 
-Now our data is in WGS84, we need to apply a projection to it before we can display it on a screen. Many news organisations have a house projection they use in their graphics. One of the more common is [Robinson] (https://en.wikipedia.org/wiki/Robinson_projection), which is what we are going to use here.
+Now our data is in WGS84, we need to apply a projection to it before we can display it on a screen. Many news organisations have a house projection they use in their graphics. One of the more common is [Robinson](https://en.wikipedia.org/wiki/Robinson_projection), which is what we are going to use here.
 
 We are also going to resize our map to fit into a 1000×800 pixel square. By scaling our map to a nice round number we will make things easier for ourselves later on when we come to scaling the map up and down based on the size of the browser. It is also the rough dimensions of London, which is wider than it is tall. Though this operation is not technically anything do do with projections in the geographical sense, you can think of this as a similar kind of transformation.
 
@@ -211,7 +211,7 @@ london-3.geo.json: london-2.geo.json
 
 This will create  `london-3.geo.json`, again depending on the file we created in the previous step. Inside, it is calling `geoproject` which came with the `d3-geo-projection` set of tools we installed at the start.
 
-This tool is part of D3, the library for building data-driven visualisations that we will be using later when it comes to displaying our data. It assumes the input data will be in WGS84, which we converted to in the previous step. Unusually, we tell it how we want it to output our data through a string of Javascript, which has D3 already included. In that string we use [D3's projection library] (https://github.com/d3/d3-geo-projection/blob/master/README.md) to create the function we need to transform our data. We apply that function to our data, which is given the one-letter name `d` here.
+This tool is part of D3, the library for building data-driven visualisations that we will be using later when it comes to displaying our data. It assumes the input data will be in WGS84, which we converted to in the previous step. Unusually, we tell it how we want it to output our data through a string of Javascript, which has D3 already included. In that string we use [D3's projection library](https://github.com/d3/d3-geo-projection/blob/master/README.md) to create the function we need to transform our data. We apply that function to our data, which is given the one-letter name `d` here.
 
 Remember to run that target before moving on to the next step.
 
@@ -227,7 +227,7 @@ Let's have a look to see what's in our file:
 
 ***Cat:*** Prints a file out into the terminal. So-called because it is actually short for concatinate -- if you give it two or more file names it will print all their respective contents out together.
 
-Eek. So there's a lot of numbers in it. Not too helpful. However, it's in a form of Json, a structured format. This means we can display it in a more human-readable way. To do this, you will need to install [JQ] (https://stedolan.github.io/jq/):
+Eek. So there's a lot of numbers in it. Not too helpful. However, it's in a form of Json, a structured format. This means we can display it in a more human-readable way. To do this, you will need to install [JQ](https://stedolan.github.io/jq/):
 
 * **Mac:** If you have Homebrew installed, run `brew install jq`.
 * **Windows:** If you have Homebrew installed, run `choco install jq`.
@@ -245,7 +245,7 @@ We can now see the structure of our data. At the top level we have a `FeatureCol
 
 ***Feature:*** A geographical term, generally describing something that you want to display on a map. This can be anything from a river, a road, or the boundary of an electoral ward.
 
-The key thing here are the *GSS codes*. These are nine-character unique numbers which are given to all administrative areas in the UK by the [ONS] (https://ons.gov.uk/). As these identifiers are widely used across government and other organisations, they provide the key to linking our geographical data to other data sets.
+The key thing here are the *GSS codes*. These are nine-character unique numbers which are given to all administrative areas in the UK by the [ONS](https://ons.gov.uk/). As these identifiers are widely used across government and other organisations, they provide the key to linking our geographical data to other data sets.
 
 
 Converting to ND-Json
@@ -290,7 +290,7 @@ Joining together
 
 *(Step 5)*
 
-We're going to join our geometry with a dataset published by HMRC giving [the average income of tax-payers in each London borough] (https://data.london.gov.uk/dataset/average-income-tax-payers-borough/resource/b3bb3f43-ec44-4971-8f46-2ef2a5e68d0a).
+We're going to join our geometry with a dataset published by HMRC giving [the average income of tax-payers in each London borough](https://data.london.gov.uk/dataset/average-income-tax-payers-borough/resource/b3bb3f43-ec44-4971-8f46-2ef2a5e68d0a).
 
 Download the data from the terminal:
 
@@ -414,7 +414,7 @@ This uses another `topojson` tool, `topoquantize`. Again, `1e3` is a number, thi
 Building an interactive map
 ---------------------------
 
-Next we're going to use the data-visualisation library [D3] (https://d3js.org/) to build a simple interactive visualisation showing our map, including our income data.
+Next we're going to use the data-visualisation library [D3](https://d3js.org/) to build a simple interactive visualisation showing our map, including our income data.
 
 First we need to create a basic HTML page where our map is going to sit. From your code editor, create a new file like so:
 

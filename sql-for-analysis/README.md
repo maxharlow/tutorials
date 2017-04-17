@@ -1,15 +1,15 @@
-SQL for Analysis
+SQL for analysis
 ================
 
 In this tutorial we are going to import some data into a relational database, and answer a few questions from it by writing SQL queries.
 
 ***SQL***: Stands for Structured Query Language, which is often pronouced as *sequel*. It's a programming language, but unlike other general-purpose languages such as Python it is a specialised language specifically for managing relational databases.
 
-***Relational database***: The most common type of database. Relational databases store tables (similar to a spreadsheet), which can have links (called relationships) between them. Other types of database include: graph databases such as [Neo4j] (https://neo4j.com/) which store data as a set items linked to each other, and document databases such as [Elasticsearch] (https://www.elastic.co/products/elasticsearch), which store each record as a completely separate page of information. These other types of database have their own languages, but relational databases all use SQL.
+***Relational database***: The most common type of database. Relational databases store tables (similar to a spreadsheet), which can have links (called relationships) between them. Other types of database include: graph databases such as [Neo4j](https://neo4j.com/) which store data as a set items linked to each other, and document databases such as [Elasticsearch](https://www.elastic.co/products/elasticsearch), which store each record as a completely separate page of information. These other types of database have their own languages, but relational databases all use SQL.
 
-So why use SQL? In short, it is a more powerful and robust way to ask questions of your data than if you were using something like Excel. Once you are familar with the language you will be able to take a single question you have and convert it into a query. This query can then be recorded, meaning your work is self-documenting, reproducible, and auditable. The power of the language also means work that would perhaps have taken several VLookups in Excel can be achieved with just a few lines of SQL, [reducing the space where mistakes could slip in] (http://www.nytimes.com/2013/04/19/opinion/krugman-the-excel-depression.html). Furthermore, relational databases can deal with gigantic datasets if need be -- you are really only limited by how powerful your computer is. (Millions of rows? You should be fine on your laptop.)
+So why use SQL? In short, it is a more powerful and robust way to ask questions of your data than if you were using something like Excel. Once you are familar with the language you will be able to take a single question you have and convert it into a query. This query can then be recorded, meaning your work is self-documenting, reproducible, and auditable. The power of the language also means work that would perhaps have taken several VLookups in Excel can be achieved with just a few lines of SQL, [reducing the space where mistakes could slip in](http://www.nytimes.com/2013/04/19/opinion/krugman-the-excel-depression.html). Furthermore, relational databases can deal with gigantic datasets if need be -- you are really only limited by how powerful your computer is. (Millions of rows? You should be fine on your laptop.)
 
-The relational database we are going to be using in this tutorial is [Postgres] (https://www.postgresql.org/), though there are other popular relational databases including [SQLite] (https://sqlite.org/) and [MySQL] (http://www.mysql.com/). Though technically they are all accessed using SQL, the language does in fact vary a bit between them, especially when it comes to importing data -- though most simple queries will be the same.
+The relational database we are going to be using in this tutorial is [Postgres](https://www.postgresql.org/), though there are other popular relational databases including [SQLite](https://sqlite.org/) and [MySQL](http://www.mysql.com/). Though technically they are all accessed using SQL, the language does in fact vary a bit between them, especially when it comes to importing data -- though most simple queries will be the same.
 
 
 Getting set up
@@ -17,7 +17,7 @@ Getting set up
 
 ### Mac
 
-If you don't already have Homebrew, follow the instructions [on its website] (http://brew.sh/) to get it installed first.
+If you don't already have Homebrew, follow the instructions [on its website](http://brew.sh/) to get it installed first.
 
 Next, from the terminal install Postgres:
 
@@ -29,11 +29,11 @@ Then lets start Postgres running in the background:
 
 You will need to leave that tab open. When you're finished with Postgres, press `Ctrl-C` here to shut it down.
 
-Next download and run [Postico] (https://eggerapps.at/postico/), a Postgres client which gives us a visual interface for writing and running our SQL queries.
+Next download and run [Postico](https://eggerapps.at/postico/), a Postgres client which gives us a visual interface for writing and running our SQL queries.
 
 ### Windows
 
-Download and run [the Postgres installer] (http://get.enterprisedb.com/postgresql/postgresql-9.6.1-1-windows-x64.exe). The default settings should work fine. The installer will offer to install StackBuilder too, but you don't need it.
+Download and run [the Postgres installer](http://get.enterprisedb.com/postgresql/postgresql-9.6.1-1-windows-x64.exe). The default settings should work fine. The installer will offer to install StackBuilder too, but you don't need it.
 
 Once it's installed, go to Start > Run > PostgreSQL 9.6 > pgAdmin 4. pgAdmin is a Postgres client which gives us a visual interface for writing and running our SQL queries. To run queries click Tools > Query Tool.
 
@@ -73,9 +73,9 @@ You can now disconnect from the `postgres` database and connect to the `crime` o
 Getting your data in
 --------------------
 
-We are going to be looking at crime. Go to [the data section of data.police.uk] (https://data.police.uk/data/) and select a police force you are interested in and generate your download. Extract the Zip file -- you should end up with a CSV file.
+We are going to be looking at crime. Go to [the data section of data.police.uk](https://data.police.uk/data/) and select a police force you are interested in and generate your download. Extract the Zip file -- you should end up with a CSV file.
 
-If you open the CSV file in Excel you might notice it's quite nice clean data -- CSV format, no colours or other formatting, no full-width title rows, etc. Though SQL is great for querying data, it's not so great for cleaning it. If your data did need cleaning it would probably be easier to run in through a tool such as [OpenRefine] (http://openrefine.org/) at this point.
+If you open the CSV file in Excel you might notice it's quite nice clean data -- CSV format, no colours or other formatting, no full-width title rows, etc. Though SQL is great for querying data, it's not so great for cleaning it. If your data did need cleaning it would probably be easier to run in through a tool such as [OpenRefine](http://openrefine.org/) at this point.
 
 Before we actually import the the main crime dataset we first need to create a table for it to go in:
 
@@ -98,7 +98,7 @@ CREATE TABLE crimes(
 
 Here we have specifed names for each column -- converted from the spreadsheet to use camelCase. Though column names are allowed to contain spaces if surrounded by `"` that soon gets irritating so typically column names use either camelCase or underscore_case to delimit words.
 
-We also need to require a type for each column. The [Postgres website lists all the different types] (https://www.postgresql.org/docs/current/static/datatype.html#DATATYPE-TABLE), though in most cases you only need to know the common ones -- as well as `text` there is `integer` for whole numbers, `float` for decimal numbers, and `boolean` for true/false values. There are also some types for dealing with dates and times, though they require some special handling which we aren't going to get into here.
+We also need to require a type for each column. The [Postgres website lists all the different types](https://www.postgresql.org/docs/current/static/datatype.html#DATATYPE-TABLE), though in most cases you only need to know the common ones -- as well as `text` there is `integer` for whole numbers, `float` for decimal numbers, and `boolean` for true/false values. There are also some types for dealing with dates and times, though they require some special handling which we aren't going to get into here.
 
 To run the import we need to know exactly where the CSV files we downloaded are:
 
@@ -198,7 +198,7 @@ SELECT DISTINCT lastOutcomeCategory FROM crimes;
 Summarising
 -----------
 
-SQL has [a number of] (https://www.postgresql.org/docs/current/static/functions-aggregate.html) aggregate functions which we can use to summarise our data in different ways.
+SQL has [a number of](https://www.postgresql.org/docs/current/static/functions-aggregate.html) aggregate functions which we can use to summarise our data in different ways.
 
 ***Aggregate function***: computes a single result from a set of input values. The simplest is `count()`, which instead of returning the rows you have selected, returns how many of them there are.
 
@@ -254,11 +254,11 @@ The `JOIN` clause lets us connect one table to another via an ID column. If you'
 
 Before we join anything together, we need to bring in another table to join our crimes data to.
 
-We're going to use [the Index of Multiple Deprivation from December 2015] (https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/464430/English_Index_of_Multiple_Deprivation_2015_-_Guidance.pdf). This is the official measure of relative deprivation per neighbourhood in England. Each neighbourhood is ranked from 1 (most deprived) to 32,844 (least deprived).
+We're going to use [the Index of Multiple Deprivation from December 2015](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/464430/English_Index_of_Multiple_Deprivation_2015_-_Guidance.pdf). This is the official measure of relative deprivation per neighbourhood in England. Each neighbourhood is ranked from 1 (most deprived) to 32,844 (least deprived).
 
 The ONS calls these neighbourhoods lower-layer super output areas (LSOAs) of about 1,500 residents, and each has an ID. Since these IDs are also used within our crime data, we can use that column to link our two tables together.
 
-First [download the data] (http://geoportal.statistics.gov.uk/datasets/75fcb66839a04725912194a2633e6b4b_0), then repeat the steps in the earlier section to import it in to Postgres. Call this table `deprivation`. Make sure you give the `imd15` column the type `integer`.
+First [download the data](http://geoportal.statistics.gov.uk/datasets/75fcb66839a04725912194a2633e6b4b_0), then repeat the steps in the earlier section to import it in to Postgres. Call this table `deprivation`. Make sure you give the `imd15` column the type `integer`.
 
 Again, it's a good idea to do a quick `SELECT` to check the data has imported correctly.
 
@@ -271,7 +271,7 @@ Outer joins are further subdivided into three types:
 * `RIGHT OUTER JOIN`: Includes non-matching rows from the second table given.
 * `FULL OUTER JOIN`: Includes non-matching rows from both tables.
 
-If that seems unclear you might find [this article] (https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/) helpful, which uses Venn diagrams to visualise what each does.
+If that seems unclear you might find [this article](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/) helpful, which uses Venn diagrams to visualise what each does.
 
 Let's run our join to look at our crimes ordered by the level of deprivation in the neighbourhood:
 

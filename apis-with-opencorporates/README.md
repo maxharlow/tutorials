@@ -33,7 +33,7 @@ Automatic lookups
 
 We are now going to use Python to automatically make multiple HTTP requests, and extract information from the Json in each response into a spreadsheet.
 
-Firstly you will need to [install Python] (https://www.python.org/downloads/) if you do not have it already. You will also need a code editor such as [Sublime Text] (https://www.sublimetext.com/) or [Atom] (https://atom.io/).
+Firstly you will need to [install Python](https://www.python.org/downloads/) if you do not have it already. You will also need a code editor such as [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/).
 
 This tutorial assumes you are using a Mac or Linux, which have access to the terminal. The `$` symbol indicates the start of a terminal command -- you don't type that though. If you look at your terminal there should be a `$` at the start of each line already. If you are using Windows everything is different and much more difficult.
 
@@ -69,7 +69,7 @@ def lookup(jurisdiction, number):
         print('Error: ' + str(response.status_code))
 ```
 
-How did we know that this is the URL we need? APIs typically have a documentation site. Reading through the [Opencorporates API documentation] (https://api.opencorporates.com/documentation/API-Reference) tells us the different types of request that Opencorporates accepts and what response you should expect.
+How did we know that this is the URL we need? APIs typically have a documentation site. Reading through the [Opencorporates API documentation](https://api.opencorporates.com/documentation/API-Reference) tells us the different types of request that Opencorporates accepts and what response you should expect.
 
 In this case we are looking up a company using their jurisdiction and company number. The jurisdiction is a two-letter code for each of the different bits of the world that have their own company registry -- in most cases countries, but sometimes states or cities. Since each registry has its own numbering system, we need both bits of information to accurately look up a specific company.
 
@@ -122,7 +122,7 @@ Remove the last line of the file that we added before and replace it with:
 print(from_file(sys.argv[1]))
 ```
 
-Now let's try running our program again, but this time with a file as the input. Download [this list of companies] (https://raw.githubusercontent.com/maxharlow/tutorials/master/opencorporates-api/company-numbers.csv) and move it into your project directory. This is a list of all the companies who donated to the Vote Leave campaign during the EU referendum. But who were they?
+Now let's try running our program again, but this time with a file as the input. Download [this list of companies](https://raw.githubusercontent.com/maxharlow/tutorials/master/opencorporates-api/company-numbers.csv) and move it into your project directory. This is a list of all the companies who donated to the Vote Leave campaign during the EU referendum. But who were they?
 
 To find out, run:
 
@@ -134,9 +134,9 @@ You should see information for each of the companies printed out to the terminal
 Dealing with rate limits
 ------------------------
 
-At this point you might start to see `403` errors being printed out. We can avoid this by passing an API key with our requests. [Sign up for a Opencorporates API key.] (https://opencorporates.com/api_accounts/new)
+At this point you might start to see `403` errors being printed out. We can avoid this by passing an API key with our requests. [Sign up for a Opencorporates API key.](https://opencorporates.com/api_accounts/new)
 
-***Rate limit:*** Often used by APIs to say how many requests can be made by one person within a given period of time. For Opencorporates [we are limited to 500 requests a month] (https://api.opencorporates.com/documentation/API-Reference#usage_limits) unless we use an API key.
+***Rate limit:*** Often used by APIs to say how many requests can be made by one person within a given period of time. For Opencorporates [we are limited to 500 requests a month](https://api.opencorporates.com/documentation/API-Reference#usage_limits) unless we use an API key.
 
 ***API key:*** A code sent with each request to let an API track how many requests you are making. Having a key is mandatory for many APIs.
 
@@ -184,4 +184,4 @@ Challenge: Getting the officers
 
 One other bit of information Opencorporates holds is a list of officers for each company -- including their directors. Can you modify your program to create a list of all the officers of all the companies in `company-numbers.csv` instead? Can we find who the people were behind the companies who funded Vote Leave?
 
-The [Opencorporates API documentation] (https://api.opencorporates.com/documentation/API-Reference) may help if you get stuck.
+The [Opencorporates API documentation](https://api.opencorporates.com/documentation/API-Reference) may help if you get stuck.
