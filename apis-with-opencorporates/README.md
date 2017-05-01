@@ -3,7 +3,7 @@ APIs with Opencorporates
 
 In this tutorial we are going to cover what an API is, and how you can use the Opencorporates API as part of a data-driven investigation.
 
-***[Opencorporates] (https://opencorporates.com/):*** An independent company who has scraped many of the world's company registries, such as the UK's [Companies House] (https://beta.companieshouse.gov.uk/), into a single easily-searchable database. For example, [this] (https://opencorporates.com/companies/gb/00445790) is the entry for Tesco Plc.
+***[Opencorporates](https://opencorporates.com/):*** An independent company who has scraped many of the world's company registries, such as the UK's [Companies House](https://beta.companieshouse.gov.uk/), into a single easily-searchable database. For example, [this](https://opencorporates.com/companies/gb/00445790) is the entry for Tesco Plc.
 
 ***API:*** Stands for Application Programming Interface. If websites are human interfaces, APIs are the interfaces for machines. Instead of HTML, APIs normally return Json. Unlike an HTML webpage, APIs no have no colours or other styling. They do, however, make it very easy to extract information without resorting to scraping. In this case we will be using Opencorporates' API to automate looking up companies in their database.
 
@@ -25,7 +25,7 @@ When you went to that URL, your browser made a HTTP `GET` request and recieved a
 
 ***GET request:*** The most common type of HTTP request. Simply says you want to 'get' the information the URL relates to. We normally write `GET` all uppercase, though the letters don't stand for anything. There are other HTTP verbs for creating, updating, and deleting pages, but we won't be using those here.
 
-***`200 OK` response:*** After making an HTTP request, you will recieve a response from the server. HTTP responses always include a three-digit code indicating whether your request was successful or not. Requests that start with a `2` indicate that everything is fine, with a `4` indicate that you made a mistake, and with a `5` indicate that something has gone wrong on the server side. You probably have come across a `404 Not Found` or perhaps a `503 Service Unavailable` response on the web before, but a `200 OK` is the normal response to a successful request. Wikipedia has [a full list] (https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) of all the possible codes, though most are quite rare.
+***`200 OK` response:*** After making an HTTP request, you will recieve a response from the server. HTTP responses always include a three-digit code indicating whether your request was successful or not. Requests that start with a `2` indicate that everything is fine, with a `4` indicate that you made a mistake, and with a `5` indicate that something has gone wrong on the server side. You probably have come across a `404 Not Found` or perhaps a `503 Service Unavailable` response on the web before, but a `200 OK` is the normal response to a successful request. Wikipedia has [a full list](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) of all the possible codes, though most are quite rare.
 
 
 Automatic lookups
