@@ -120,7 +120,7 @@ It turns out that some of these files published by Parliament are Windows-format
 
 **Check your understanding:** Can you find all the questions in the text? That is, sentences ending in a question mark. Remember you will need to escape the question mark itself!
 
-If we wanted to find all the words that don't use constanants we could write:
+If we wanted to find all the words that don't use consonants we could write:
 
 ```regex
 \b[^aeiouAEIOU\W ]+\b
