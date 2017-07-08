@@ -33,7 +33,7 @@ Automatic lookups
 
 We are now going to use Python to automatically make multiple HTTP requests, and extract information from the Json in each response into a spreadsheet.
 
-Firstly you will need to [install Python](https://www.python.org/downloads/) if you do not have it already. You will also need a code editor such as [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/).
+Firstly you will need to [install Python](https://www.python.org/downloads/) if you do not have it already. You will also need a text editor such as [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/).
 
 This tutorial assumes you are using a Mac or Linux, which have access to the terminal. The `$` symbol indicates the start of a terminal command -- you don't type that though. If you look at your terminal there should be a `$` at the start of each line already. If you are using Windows everything is different and much more difficult.
 
@@ -41,7 +41,7 @@ Python comes with a tool called Pip for installing extra libraries. To start wit
 
     $ pip install requests
 
-Back in your code editor, start a new file and import `requests` as well as the `sys`, `csv`, and `json` libraries that come with Python:
+Back in your text editor, start a new file and import `requests` as well as the `sys`, `csv`, and `json` libraries that come with Python:
 
 ```python
 import sys
@@ -79,7 +79,7 @@ To check that everything works so far lets add some code so we can call our `loo
 print(lookup(sys.argv[1], sys.argv[2]))
 ```
 
-Now to try running the first part of our program. Create a new directory somewhere for your work. Inside your code editor, save the file as `oclookup.py` to that directory. In the terminal, navigate to your directory by running something like:
+Now to try running the first part of our program. Create a new directory somewhere for your work. Inside your text editor, save the file as `oclookup.py` to that directory. In the terminal, navigate to your directory by running something like:
 
     $ cd ~/Documents/journocoders
 

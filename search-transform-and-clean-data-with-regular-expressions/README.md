@@ -1,5 +1,5 @@
-Search, transform, and clean your data with regular expressions
-===============================================================
+Search, transform, and clean data with regular expressions
+==========================================================
 
 In this tutorial we are going to learn how to use *regular expressions*.
 
@@ -15,19 +15,21 @@ A pattern can be anything that follows a regular format -- that includes email a
 
 They are useful when you need to search for a pattern in your data rather than for something specific. For example, the ICIJ [used regular expressions](https://source.opennews.org/articles/people-and-tech-behind-panama-papers) to look for passport numbers in the Panama Papers. We can also use them to extract all the text that matches a pattern, allowing us to create new structured data, such as a list or a spreadsheet, out of a perhaps unstructured source, such as the contents of a webpage. For this reason they are often used when scraping data from websites. Perhaps most usefully, however, they can be used to power-clean your data by removing or rearranging problematic parts.
 
-Support for regular expessions can be found all over the place. We are mostly going to be using them inside a code editor, but every mainstream programming language has support for working with them too. Sadly the specific syntax can vary from place to place, but the core -- what we will cover here -- is the same.
+Support for regular expessions can be found all over the place. We are mostly going to be using them inside a text editor, but every mainstream programming language has support for working with them too. Sadly the specific syntax can vary from place to place, but the core -- what we will cover here -- is the same.
 
 
 Getting set up
 --------------
 
-You will need to download and install a code editor such as [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/).
+We only need a text editor.
+
+* [What is a text editor and where do I get one?](https://github.com/maxharlow/tutorials/tree/master/getting-started#a-text-editor)
 
 
 Your first regular expression
 -----------------------------
 
-Before we start working with some real data in your code editor we need to understand the basic structure of a regular expression. First go to [the full text of the Queen's speech at the 2016 state opening of parliament](https://www.gov.uk/government/speeches/queens-speech-2016). Copy all of the text.
+Before we start working with some real data in your text editor we need to understand the basic structure of a regular expression. First go to [the full text of the Queen's speech at the 2016 state opening of parliament](https://www.gov.uk/government/speeches/queens-speech-2016). Copy all of the text.
 
 Now, go to [Regex101.com](https://regex101.com/) and paste the text we just copied into the large box.
 
@@ -79,9 +81,9 @@ You might have seen by now how regular expressions can end up looking like long 
 Finding a pattern
 -----------------
 
-Now we have a rough of idea of how regular expressions work we can move into doing things within our code editor.
+Now we have a rough of idea of how regular expressions work we can move into doing things within our text editor.
 
-We're going to look at some text from [Hansard](https://en.wikipedia.org/wiki/Hansard), the verbatim report of everything said in parliament. [Find the last Wednesday when the Commons sat](https://hansard.parliament.uk/commons), then look for *'oral answers to questions'*, then *'prime minister'*. Once you've found a page in the top right there should be a 'text only' link that lets you download a plain text file. Open that file in your code editor.
+We're going to look at some text from [Hansard](https://en.wikipedia.org/wiki/Hansard), the verbatim report of everything said in parliament. [Find the last Wednesday when the Commons sat](https://hansard.parliament.uk/commons), then look for *'oral answers to questions'*, then *'prime minister'*. Once you've found a page in the top right there should be a 'text only' link that lets you download a plain text file. Open that file in your text editor.
 
 Now:
 
@@ -140,7 +142,7 @@ This uses the 'pipe' character, `|`, to indicate we want one thing or another. A
 
 **Check your understanding:** Write a expression to find every time anyone says any the words: strong, stronger, or stable.
 
-Finally, note that as well as searching through single files, most code editors, including Atom and Sublime Text, give us ways to search through multiple files using regular expressions.
+Finally, note that as well as searching through single files, most text editors, including Atom and Sublime Text, give us ways to search through multiple files using regular expressions.
 
 
 Extracting a pattern
@@ -150,7 +152,7 @@ Now we have got a feel of how to match things let's look at extracting our match
 
 We are going to look at what and who Donald Trump has been tweeting about. Firstly we need some of his tweets -- to get them go to [his profile](https://twitter.com/realDonaldTrump). This page auto loads in his tweets as you scroll to the bottom, so go down to the bottom a few times so we have a good amount of tweets on the page. Now select everything by going Edit, then Select All. Then copy. This copies everything on the page, including the list of things trending across all of Twitter -- we will remove this in a moment.
 
-Create a new file in your code editor and paste in the contents. It will look a bit jumbled up, but it's still good enough for our purposes. The first thing we will need to do, however, is remove that trending list -- they should be fairly near the top. Find them in the text and remove them.
+Create a new file in your text editor and paste in the contents. It will look a bit jumbled up, but it's still good enough for our purposes. The first thing we will need to do, however, is remove that trending list -- they should be fairly near the top. Find them in the text and remove them.
 
 Now, let's find all the hashtags he has used:
 
@@ -158,7 +160,7 @@ Now, let's find all the hashtags he has used:
 #\w+
 ```
 
-Press `Alt-Enter` to select everything that matches our regex, then copy it. Create a new file in your code editor and paste it in -- you should see all of our matches, each on a new line. At this point we could use a pivot table to quickly find out which hashtags have been used the most. (This list will include retweets, we're not going to worry about them.)
+Press `Alt-Enter` to select everything that matches our regex, then copy it. Create a new file in your text editor and paste it in -- you should see all of our matches, each on a new line. At this point we could use a pivot table to quickly find out which hashtags have been used the most. (This list will include retweets, we're not going to worry about them.)
 
 **Check your understanding:** Write another regex to extract out all the `@` usernames that Trump has mentioned. You will also pick up his own username for every tweet, but let's not worry about that.
 

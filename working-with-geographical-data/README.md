@@ -31,7 +31,7 @@ If you don't already have Chocolatey, find PowerShell from the Start menu, then 
 
 Then follow the instructions [on its website](https://chocolatey.org/install) to get it installed.
 
-From PowerShell you can then install Cygwin, Node, and Make:
+From PowerShell you can then install Cygwin, Node, Make, Curl, and Unzip:
 
     > choco install cygwin nodejs make curl unzip
 

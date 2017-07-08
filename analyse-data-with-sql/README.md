@@ -1,5 +1,5 @@
-SQL for analysis
-================
+Analyse data with SQL
+=====================
 
 In this tutorial we are going to import some data into a relational database, and answer a few questions from it by writing SQL queries.
 
@@ -15,15 +15,18 @@ The relational database we are going to be using in this tutorial is [Postgres](
 Getting set up
 --------------
 
+We need to install Postgres from the terminal (except on Windows).
+
+* [What and where is the terminal?](https://github.com/maxharlow/tutorials/tree/master/getting-started#the-terminal)
+* [How should I install things?](https://github.com/maxharlow/tutorials/tree/master/getting-started#installing-things)
+
 ### Mac
 
-If you don't already have Homebrew, follow the instructions [on its website](http://brew.sh/) to get it installed first.
-
-Next, from the terminal install Postgres:
+In the terminal, use `brew` to install Postgres:
 
     $ brew install postgres
 
-Then lets start Postgres running in the background:
+Then start Postgres running in the background:
 
     $ postgres -D /usr/local/var/postgres
 
@@ -39,7 +42,7 @@ Once it's installed, go to Start > Run > PostgreSQL 9.6 > pgAdmin 4. pgAdmin is 
 
 ### Linux
 
-On a Debian-based Linux distribution, install Postgres and pgAdmin:
+In the terminal, use `apt-get` to install Postgres and pgAdmin:
 
     $ sudo apt-get install postgresql pgadmin3
 
