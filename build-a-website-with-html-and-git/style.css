@@ -1,0 +1,28 @@
+body {
+    background: yellow;
+}
+
+.first {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contact {
+    text-align: center;
+}
+
+.social {
+    border-radius: 50%;
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.fa-envelope {
+    background: grey;
+}
+
+.fa-twitter {
+    background: #4099ff;
+}
