@@ -83,7 +83,7 @@ Organising your files
 
 One common way to keep your work organised do this is create a new directory in your home directory named `Projects`. Every time you start a new project or tutorial create a new directory inside here for that piece of work. Keep everything relevant to that project inside here, and not on the desktop or anywhere else.
 
-Name your directory and files in lowercase and with hyphens instead of spaces. This makes it quicker to navigate to them in the terminal.
+Name your directory and files in lowercase and with hyphens instead of spaces. This makes it quicker to navigate to them in the terminal, as dealing with spaces can be fiddly.
 
 You can also do this from the terminal. First, make sure you are inside your projects directory. Then run:
 

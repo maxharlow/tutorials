@@ -36,14 +36,14 @@ If you are using the terminal the Windows 10 way via Bash on Windows you can use
     $ apt-get install git
     $ apt-get install nodejs
 
-If you have a another version of Windows and you are using Cygwin as your terminal can use `apt-cyg` to install Git:
+If you have a another version of Windows and you are using Cygwin as your terminal can use `apt-cyg` to install Git and Node:
 
     $ apt-cyg install git
     $ apt-cyg install nodejs
 
 ### Linux
 
-In the terminal, use `apt-get` to install Git:
+In the terminal, use `apt-get` to install Git and Node:
 
     $ sudo apt-get install git
     $ sudo apt-get install nodejs

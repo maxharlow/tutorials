@@ -1,13 +1,60 @@
-APIs with Opencorporates
-========================
+Fetch and enrich data with APIs
+===============================
 
-In this tutorial we are going to cover what an API is, and how you can use the Opencorporates API as part of a data-driven investigation.
+In this tutorial we are going to cover what an API is, and how you can use the Opencorporates company data API to fetch particular sets of data you need, and to enrich your existing data with theirs.
 
-***[Opencorporates](https://opencorporates.com/):*** An independent company who has scraped many of the world's company registries, such as the UK's [Companies House](https://beta.companieshouse.gov.uk/), into a single easily-searchable database. For example, [this](https://opencorporates.com/companies/gb/00445790) is the entry for Tesco Plc.
+***[Opencorporates](https://opencorporates.com/):*** An independent company who has scraped many of the world's company registries, such as the UK's [Companies House](https://beta.companieshouse.gov.uk/), into a single easily-searchable database. For example, [this is the entry for Tesco Plc](https://opencorporates.com/companies/gb/00445790).
 
 ***API:*** Stands for Application Programming Interface. If websites are human interfaces, APIs are the interfaces for machines. Instead of HTML, APIs normally return Json. Unlike an HTML webpage, APIs no have no colours or other styling. They do, however, make it very easy to extract information without resorting to scraping. In this case we will be using Opencorporates' API to automate looking up companies in their database.
 
 ***Json:*** A standard format for storing and transmitting data. Older APIs sometimes return data in XML format instead, which achieves much the same thing as Json. Many APIs support both formats.
+
+
+Getting set up
+--------------
+
+We first need a text editor.
+
+* [What is a text editor and where do I get one?](https://github.com/maxharlow/tutorials/tree/master/getting-started#a-text-editor)
+
+We also need to install Python from the terminal.
+
+* [What and where is the terminal?](https://github.com/maxharlow/tutorials/tree/master/getting-started#the-terminal)
+* [How should I install things?](https://github.com/maxharlow/tutorials/tree/master/getting-started#installing-things)
+
+### Mac
+
+In the terminal, use `brew` to install Python:
+
+    $ brew install python
+
+### Windows
+
+If you are using the terminal the Windows 10 way via Bash on Windows you can use `apt-get` to install Python:
+
+    $ apt-get install python
+
+If you have a another version of Windows and you are using Cygwin as your terminal can use `apt-cyg` to install python:
+
+    $ apt-cyg install python
+
+### Linux
+
+In the terminal, use `apt-get` to install Python:
+
+    $ sudo apt-get install python
+
+<hr>
+
+You should also create a new project directory for the files we are going to be creating in this tutorial.
+
+* [How do I use the terminal?](https://github.com/maxharlow/tutorials/tree/master/getting-started#essentials-of-the-terminal)
+* [How should I organise my files?](https://github.com/maxharlow/tutorials/tree/master/getting-started#organising-your-files)
+
+From the terminal, make sure you are in your projects directory. Then run:
+
+    $ mkdir opencorporates-lookup
+    $ cd opencorporates-lookup
 
 
 Your first request
@@ -32,10 +79,6 @@ Automatic lookups
 -----------------
 
 We are now going to use Python to automatically make multiple HTTP requests, and extract information from the Json in each response into a spreadsheet.
-
-Firstly you will need to [install Python](https://www.python.org/downloads/) if you do not have it already. You will also need a text editor such as [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/).
-
-This tutorial assumes you are using a Mac or Linux, which have access to the terminal. The `$` symbol indicates the start of a terminal command -- you don't type that though. If you look at your terminal there should be a `$` at the start of each line already. If you are using Windows everything is different and much more difficult.
 
 Python comes with a tool called Pip for installing extra libraries. To start with we are going to install the `requests` library, which we will use for making HTTP requests:
 
@@ -79,11 +122,11 @@ To check that everything works so far lets add some code so we can call our `loo
 print(lookup(sys.argv[1], sys.argv[2]))
 ```
 
-Now to try running the first part of our program. Create a new directory somewhere for your work. Inside your text editor, save the file as `oclookup.py` to that directory. In the terminal, navigate to your directory by running something like:
+Now to try running the first part of our program. Inside your text editor, save the file as `oclookup.py` to the project directory you created earlier.
 
-    $ cd ~/Documents/journocoders
+Back in the terminal, navigate to your project directory.
 
-*Tip:* Files and directories with spaces in them are fiddly to deal with in the terminal. We often name things using hyphens and underscores to avoid these problems.
+* [How do I use the terminal?](https://github.com/maxharlow/tutorials/tree/master/getting-started#essentials-of-the-terminal)
 
 If you now list all the files in the directory:
 
@@ -124,7 +167,7 @@ print(from_file(sys.argv[1]))
 
 Now let's try running our program again, but this time with a file as the input. Download [this list of companies](https://raw.githubusercontent.com/maxharlow/tutorials/master/opencorporates-api/company-numbers.csv) and move it into your project directory. This is a list of all the companies who donated to the Vote Leave campaign during the EU referendum. But who were they?
 
-To find out, run:
+To find out go back to the terminal and run:
 
     $ python oclookup.py company-numbers.csv
 
