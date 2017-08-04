@@ -117,6 +117,13 @@ At this point we're going to look at how we can use Git to manage a project such
 
 ***Repository***: Often shortened to *repo*. This is simply a directory where files inside can have their changes tracked.
 
+At this point Git realises that this is the first time you've used Git, and asks you to tell it your name and email address:
+
+    $ git config --global user.name 'John Doe'
+    $ git config --global user.email johndoe@example.com
+
+(It will not ask if you've done this before -- you only ever have to set these once.)
+
 Now, let's see what the state is of our repository:
 
     $ git status
