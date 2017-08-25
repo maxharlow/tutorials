@@ -103,19 +103,19 @@ Get Homebrew by following [the instructions on its website](https://brew.sh/).
 
 You can then install things using the `brew` command. For example:
 
-    $ brew install python
+    $ brew install ruby
 
 ### Windows
 
 If you are using the terminal the Windows 10 way via Bash on Windows you can install things with the `apt-get` command. For example:
 
-    $ apt-get install python
+    $ apt-get install ruby
 
 If you have a another version of Windows and you are using Cygwin as your terminal you need to get `apt-cyg` by following [the instructions on its website](https://github.com/transcode-open/apt-cyg#quick-start).
 
 You can then install things using the `apt-cyg` command. For example:
 
-    $ apt-cyg install python
+    $ apt-cyg install ruby
 
 ### Linux
 
@@ -123,7 +123,7 @@ Most Linux distributions come with Apt for installing things, though some use ot
 
 If yours has it, you can then install things with the `apt-get` command. For example:
 
-    $ sudo apt-get install python
+    $ sudo apt-get install ruby
 
 The `sudo` stands for 'super-user do', which is used when admin permissions are needed to do something. You will be asked for your user password.
 

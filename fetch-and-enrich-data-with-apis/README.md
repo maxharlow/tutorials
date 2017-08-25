@@ -26,23 +26,23 @@ We also need to install Python from the terminal.
 
 In the terminal, use `brew` to install Python:
 
-    $ brew install python
+    $ brew install python3
 
 ### Windows
 
 If you are using the terminal the Windows 10 way via Bash on Windows you can use `apt-get` to install Python:
 
-    $ apt-get install python
+    $ apt-get install python3
 
 If you have a another version of Windows and you are using Cygwin as your terminal can use `apt-cyg` to install python:
 
-    $ apt-cyg install python
+    $ apt-cyg install python3
 
 ### Linux
 
 In the terminal, use `apt-get` to install Python:
 
-    $ sudo apt-get install python
+    $ sudo apt-get install python3
 
 <hr>
 
@@ -82,7 +82,7 @@ We are now going to use Python to automatically make multiple HTTP requests, and
 
 Python comes with a tool called Pip for installing extra libraries. To start with we are going to install the `requests` library, which we will use for making HTTP requests:
 
-    $ pip install requests
+    $ pip3 install requests
 
 Back in your text editor, start a new file and import `requests` as well as the `sys`, `csv`, and `json` libraries that come with Python:
 
@@ -136,7 +136,7 @@ You should see `oclookup.py`.
 
 Now run our file and pass it the details for Tesco Plc:
 
-    $ python oclookup.py gb 00445790
+    $ python3 oclookup.py gb 00445790
 
 You should see some information on the company printed out to the terminal. This is good!
 
@@ -169,7 +169,7 @@ Now let's try running our program again, but this time with a file as the input.
 
 To find out go back to the terminal and run:
 
-    $ python oclookup.py company-numbers.csv
+    $ python3 oclookup.py company-numbers.csv
 
 You should see information for each of the companies printed out to the terminal.
 
@@ -217,7 +217,7 @@ to_file(from_file(sys.argv[1]))
 
 Run your program again:
 
-    $ python oclookup.py company-numbers.csv
+    $ python3 oclookup.py company-numbers.csv
 
 You should now see nothing printed out to the terminal this time. However there should be a new `company-details.csv` file in the same directory. Open it up and you should see details for each of the companies.
 

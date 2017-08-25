@@ -504,9 +504,9 @@ Finally we append a new group, or `<g>` element, to the `<svg>`, and we tell it 
 
 Now we need to serve up these files so we can see them in our browser. There are lots of ways of doing this, but we're going to use Python:
 
-    $ python -m SimpleHTTPServer 8000
+    $ python3 -m http.server 8000
 
-(If you're using Windows you will need to run `choco install python` first.)
+(If you're using Windows you will need to run `choco install python3` first.)
 
 Open your browser to `localhost:8000/map.html`, and let's see what it looks like. You should see a map of London! Click on a borough, you should see the name of that borough, and the median income figure appear below the title. Resize your browser, and the map should resize too.
 
