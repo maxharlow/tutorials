@@ -61,8 +61,8 @@ You should also create a new project directory for the files we are going to be 
 
 From the terminal, make sure you are in your projects directory. Then run:
 
-    $ mkdir my-first-web-page
-    $ cd my-first-web-page
+    $ mkdir learning-html-and-git
+    $ cd learning-html-and-git
 
 
 Your first web page

@@ -53,8 +53,8 @@ You should also create a new project directory for the files we are going to be 
 
 From the terminal, make sure you are in your projects directory. Then run:
 
-    $ mkdir opencorporates-lookup
-    $ cd opencorporates-lookup
+    $ mkdir learning-apis
+    $ cd learning-apis
 
 
 Your first request
