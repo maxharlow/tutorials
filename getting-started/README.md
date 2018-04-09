@@ -23,9 +23,9 @@ Open up the Finder, then go into Applications on the left. Find the Utilities fo
 
 ### Windows
 
-If you have Windows 10, you can use Bash on Windows which is much easier to get set up with. First, follow the [installation instructions](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide). To get to the terminal after it has been installed open Command Prompt from the Start menu then enter `bash`.
+If you have Windows 10, we first need to get the 'Windows Subsystem for Linux' by following these [installation instructions](https://docs.microsoft.com/en-gb/windows/wsl/install-win10). Choose the Ubuntu Linux distribution. To get to the terminal afterwards open Command Prompt from the Start menu then enter `bash`.
 
-If you have another version of Windows, you will need to [download and install Cygwin](https://cygwin.com/install.html). To get to the terminal after it has been installed open Cygwin from the Start menu.
+If you have an older version of Windows, you will need to [download and install Cygwin](https://cygwin.com/install.html). At the 'select packages' screen search for `lynx` and `wget`, and tick their boxes before continuing. To get to the terminal afterwards open Cygwin from the Start menu.
 
 The first time you open it you should set Cygwin to use your Windows home directory:
 
