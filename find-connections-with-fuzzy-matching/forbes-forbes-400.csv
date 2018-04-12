@@ -1,0 +1,420 @@
+name,lastName,uri,imageUri,worthChange,age,source,industry,gender,timestamp,headquarters,state,realTimeWorth,realTimeRank,realTimePosition
+Alexandra Daitch,Daitch,alexandra-daitch,no-pic-female,0,55,Cargill,Food and Beverage,F,1516704901087,"Old Lyme, CT",Connecticut,2072.273,381,381
+Antony Ressler,Ressler,antony-ressler,antony-ressler,65.97,56,finance,Finance and Investments,M,1516704901087,"Los Angeles, CA",California,2086.525,380,380
+Brian Roberts,Roberts,brian-roberts,brian-roberts,15.883,58,Comcast,Service,M,1516704901087,"Philadelphia, PA",Pennsylvania,2001.141,395,395
+Catherine Lozick,Lozick,catherine-lozick,no-pic-female,0,73,valve manufacturing,Manufacturing,F,1516704901087,"Naples, FL",Florida,2255.947,359,359
+Charles Zegar,Zegar,charles-zegar,no-pic,0,69,Bloomberg LP,Media & Entertainment,M,1516704901087,"New York, NY",New York,2050.266,388,388
+Jonathan Nelson,Nelson,jonathan-nelson,jonathan-nelson,0,61,private equity,Finance and Investments,M,1516704901087,"Providence, RI",Rhode Island,1965,400,400
+Katherine Tanner,Tanner,katherine-tanner,no-pic-female,0,62,Cargill,Food and Beverage,F,1516704901087,"Marathon, FL",Florida,2072.273,381,382
+Leslie Alexander,Alexander,leslie-alexander,leslie-alexander,0,74,Houston Rockets,Sports,M,1516704901087,"Houston, TX",Texas,2062,386,386
+Lucy Stitzer,Stitzer,lucy-stitzer,no-pic-female,0,58,Cargill,Food and Beverage,F,1516704901087,"Greenwich, CT",Connecticut,2072.273,381,383
+Phillip T. (Terry) Ragon,Ragon,phillip-t-terry-ragon,no-pic,0,68,health IT,Technology,M,1516704901087,"Boston, MA",Massachusetts,2287.669,354,354
+Robert Duggan,Duggan,robert-duggan,robert-duggan,9.042,73,pharmaceuticals,Healthcare,M,1516704901087,"Clearwater, FL",Florida,2009.366,394,394
+Rodney Sacks,Sacks,rodney-sacks,rodney-sacks,-3.989,68,energy drinks,Food and Beverage,M,1516704901087,"Laguna Beach, CA",California,2067.598,385,385
+Roger Wang,Wang,roger-wang,roger-wang,27.973,69,retail,Fashion & Retail,M,1516704901086,Nanjing,Jiangsu,4090.939,179,179
+Sarah MacMillan,MacMillan,sarah-macmillan,no-pic-female,0,64,Cargill,Food and Beverage,F,1516704901087,"Los Angeles, CA",California,2072.273,381,384
+Stewart Horejsi & family,Horejsi,stewart-horejsi,no-pic,21.723,80,Berkshire Hathaway,Finance and Investments,M,1516704901087,"Phoenix, AZ",Arizona,1990.454,399,399
+Thomas Hagen,Hagen,thomas-hagen,no-pic,-25.643,82,insurance,Finance and Investments,M,1516704901087,"Erie, PA",Pennsylvania,2036.155,390,390
+Timothy Boyle,Boyle,timothy-boyle,timothy-boyle,7.491,68,Columbia Sportswear,Fashion & Retail,M,1516704901087,"Portland, OR",Oregon,2112.952,374,374
+Tor Peterson,Peterson,tor-peterson,no-pic,-72.485,53,commodities,Metals & Mining,M,1516704901087,Zug,,2285.41,355,355
+Vincent Viola,Viola,vincent-viola,vincent-viola,-0.001,61,electronic trading,Finance and Investments,M,1516704901087,"New York, NY",New York,2185.883,367,367
+Bill Gates,Gates,bill-gates,bill-gates,224.467,62,Microsoft,Technology,M,1516704901086,"Medina, WA",Washington,92571.778,3,3
+Jeff Bezos,Bezos,jeff-bezos,jeff-bezos,2582.299,54,Amazon.com,Technology,M,1516704901086,"Seattle, WA",Washington,110708.777,1,1
+Warren Buffett,Buffett,warren-buffett,warren-buffett,1082.605,87,Berkshire Hathaway,Finance and Investments,M,1516704901086,"Omaha, NE",Nebraska,92639.248,2,2
+Mark Zuckerberg,Zuckerberg,mark-zuckerberg,mark-zuckerberg,1615.394,33,Facebook,Technology,M,1516704901086,"Palo Alto, CA",California,74725.644,4,4
+Larry Ellison,Ellison,larry-ellison,larry-ellison,139.251,73,software,Technology,M,1516704901086,"Woodside, CA",California,61578.553,5,5
+Charles Koch,Koch,charles-koch,charles-koch,0,82,Koch Industries,Diversified,M,1516704901086,"Wichita, KS",Kansas,51974.932,9,9
+David Koch,Koch,david-koch,david-koch,0,77,Koch Industries,Diversified,M,1516704901086,"New York, NY",New York,51974.932,9,10
+Michael Bloomberg,Bloomberg,michael-bloomberg,michael-bloomberg,0,75,Bloomberg LP,Media & Entertainment,M,1516704901086,"New York, NY",New York,52646.712,7,7
+Larry Page,Page,larry-page,larry-page,777.868,44,Google,Technology,M,1516704901086,"Palo Alto, CA",California,53503.24,6,6
+Sergey Brin,Brin,sergey-brin,sergey-brin,752.637,44,Google,Technology,M,1516704901086,"Los Altos, CA",California,52009.57,8,8
+Jim Walton,Walton,jim-walton,jim-walton,342.418,69,Wal-Mart,Fashion & Retail,M,1516704901086,"Bentonville, AR",Arkansas,48741.916,11,11
+S. Robson Walton,Walton,s-robson-walton,s-robson-walton,337.419,73,Wal-Mart,Fashion & Retail,M,1516704901086,"Bentonville, AR",Arkansas,48498.932,12,12
+Alice Walton,Walton,alice-walton,alice-walton,340.099,68,Wal-Mart,Fashion & Retail,F,1516704901086,"Fort Worth, TX",Texas,48421.657,13,13
+Sheldon Adelson,Adelson,sheldon-adelson,sheldon-adelson,1119.339,84,casinos,Gambling & Casinos,M,1516704901086,"Las Vegas, NV",Nevada,41272.847,14,14
+Steve Ballmer,Ballmer,steve-ballmer,steve-ballmer,498.957,61,Microsoft,Technology,M,1516704901086,"Hunts Point, WA",Washington,39169.476,15,15
+Jacqueline Mars,Mars,jacqueline-mars,jacqueline-mars,0,78,"candy, pet food",Food and Beverage,F,1516704901086,"The Plains, VA",Virginia,28096.86,17,17
+John Mars,Mars,john-mars,no-pic,0,82,"candy, pet food",Food and Beverage,M,1516704901086,"Jackson, WY",Wyoming,28096.86,17,18
+Phil Knight,Knight,phil-knight,phil-knight,-282.589,79,Nike,Fashion & Retail,M,1516704901086,"Hillsboro, OR",Oregon,29699.156,16,16
+Michael Dell,Dell,michael-dell,michael-dell,3.187,52,Dell computers,Technology,M,1516704901086,"Austin, TX",Texas,24744.691,19,19
+George Soros,Soros,george-soros,george-soros,0,87,hedge funds,Finance and Investments,M,1516704901086,"Katonah, NY",New York,8000,66,66
+Elon Musk,Musk,elon-musk,elon-musk,50.229,46,Tesla Motors,Automotive,M,1516704901086,"Los Angeles, CA",California,20957.256,22,22
+Paul Allen,Allen,paul-allen,paul-allen,56.406,65,"Microsoft, investments",Technology,M,1516704901086,"Mercer Island, WA",Washington,21015.283,21,21
+Len Blavatnik,Blavatnik,len-blavatnik,len-blavatnik,-37.166,60,diversified,Diversified,M,1516704901086,London,,21303.038,20,20
+Laurene Powell Jobs,Powell Jobs,laurene-powell-jobs,laurene-powell-jobs,-22.422,54,"Apple, Disney",Philanthropy/NGO,F,1516704901086,"Palo Alto, CA",California,20046.277,24,24
+James Simons,Simons,james-simons,james-simons,0,79,hedge funds,Finance and Investments,M,1516704901086,"East Setauket, NY",New York,18500,26,26
+Ray Dalio,Dalio,ray-dalio,ray-dalio,0,68,hedge funds,Finance and Investments,M,1516704901086,"Greenwich, CT",Connecticut,17000,27,27
+Carl Icahn,Icahn,carl-icahn,carl-icahn,87.038,81,investments,Finance and Investments,M,1516704901086,"New York, NY",New York,16999.578,28,28
+Donald Bren,Bren,donald-bren,donald-bren,0,85,real estate,Real Estate,M,1516704901086,"Newport Beach, CA",California,16265.953,31,31
+Abigail Johnson,Johnson,abigail-johnson,abigail-johnson,0,56,money management,Finance and Investments,F,1516704901086,"Milton, MA",Massachusetts,19743.329,25,25
+Charles Ergen,Ergen,charles-ergen,charles-ergen,239.387,64,satellite TV,Media & Entertainment,M,1516704901086,"Denver, CO",Colorado,14357.979,35,35
+Thomas Peterffy,Peterffy,thomas-peterffy,thomas-peterffy,347.509,73,discount brokerage,Finance and Investments,M,1516704901086,"Palm Beach, FL",Florida,20753.2,23,23
+Dustin Moskovitz,Moskovitz,dustin-moskovitz,dustin-moskovitz,307.436,33,Facebook,Technology,M,1516704901086,"San Francisco, CA",California,14699.3,33,33
+Lukas Walton,Walton,lukas-walton,no-pic,77.407,31,Wal-Mart,Fashion & Retail,M,1516704901086,"Jackson, WY",Wyoming,16603.061,29,29
+Steve Cohen,Cohen,steve-cohen,steve-cohen,0,61,hedge funds,Finance and Investments,M,1516704901086,"Greenwich, CT",Connecticut,13000,39,39
+Philip Anschutz,Anschutz,philip-anschutz,philip-anschutz,-2.52,78,investments,Finance and Investments,M,1516704901086,"Denver, CO",Colorado,13372.3,36,36
+Eric Schmidt,Schmidt,eric-schmidt,eric-schmidt,174.746,62,Google,Technology,M,1516704901086,"Atherton, CA",California,14598.714,34,34
+Stephen Schwarzman,Schwarzman,stephen-schwarzman,stephen-schwarzman,70.906,70,investments,Finance and Investments,M,1516704901086,"New York, NY",New York,13121.526,37,37
+Donald Newhouse,Newhouse,donald-newhouse,donald-newhouse,146.4,88,media,Media & Entertainment,M,1516704901086,"Somerset County, NJ",New Jersey,13101.725,38,38
+Jim Kennedy,Kennedy,jim-kennedy,jim-kennedy,0,70,media,Media & Entertainment,M,1516704901086,"Atlanta, GA",Georgia,12691.522,41,42
+Rupert Murdoch,Murdoch,rupert-murdoch,rupert-murdoch,223.81,86,"newspapers, TV network",Media & Entertainment,M,1516704901086,"New York, NY",New York,15679.595,32,32
+Blair Parry-Okeden,Parry-Okeden,blair-parry-okeden,no-pic-female,0,67,media,Media & Entertainment,F,1516704901086,Scone,,12691.522,41,41
+Ronald Perelman,Perelman,ronald-perelman,ronald-perelman,5.389,75,leveraged buyouts,Finance and Investments,M,1516704901086,"New York, NY",New York,12272.922,44,44
+Harold Hamm,Hamm,harold-hamm,harold-hamm,383.972,72,oil & gas,Energy,M,1516704901086,"Oklahoma City, OK",Oklahoma,16268.048,30,30
+David Tepper,Tepper,david-tepper,david-tepper,0,60,hedge funds,Finance and Investments,M,1516704901086,"Miami Beach, FL",Florida,11000,46,46
+Andrew Beal,Beal,andrew-beal,andrew-beal,0,65,"banks, real estate",Finance and Investments,M,1516704901086,"Dallas, TX",Texas,11986.446,45,45
+Leonard Lauder,Lauder,leonard-lauder,leonard-lauder,35.204,80,Estee Lauder,Fashion & Retail,M,1516704901086,"New York, NY",New York,12894.949,40,40
+"John Menard, Jr.",Menard,john-menard-jr,john-menard-jr,-0.025,78,home improvement stores,Fashion & Retail,M,1516704901086,"Eau Claire, WI",Wisconsin,12538.582,43,43
+Jan Koum,Koum,jan-koum,jan-koum,72.114,41,WhatsApp,Technology,M,1516704901086,"Santa Clara, CA",California,9866.415,51,51
+Pierre Omidyar,Omidyar,pierre-omidyar,pierre-omidyar,79.736,50,eBay,Technology,M,1516704901086,"Honolulu, HI",Hawaii,10992.814,47,47
+Micky Arison,Arison,micky-arison,micky-arison,26.696,68,Carnival Cruises,Service,M,1516704901086,"Bal Harbour, FL",Florida,9813.685,52,52
+James Goodnight,Goodnight,james-goodnight,james-goodnight,0,75,software,Technology,M,1516704901086,"Cary, NC",North Carolina,10359.331,48,48
+Ken Griffin,Griffin,ken-griffin,ken-griffin,0,49,hedge funds,Finance and Investments,M,1516704901086,"Chicago, IL",Illinois,8765.236,57,57
+"Herbert Kohler, Jr.",Kohler,herbert-kohler-jr,herbert-kohler-jr,0,78,plumbing fixtures,Manufacturing,M,1516704901086,"Kohler, WI",Wisconsin,10180.355,50,50
+Charles Schwab,Schwab,charles-schwab,charles-schwab,-5.711,80,discount brokerage,Finance and Investments,M,1516704901086,,,10248.809,49,49
+Patrick Soon-Shiong,Soon-Shiong,patrick-soon-shiong,patrick-soon-shiong,16.403,65,pharmaceuticals,Healthcare,M,1516704901086,"Los Angeles, CA",California,7964.765,68,68
+John Malone,Malone,john-malone,john-malone,55.014,76,cable television,Media & Entertainment,M,1516704901086,"Elizabeth, CO",Colorado,8349.75,63,63
+"Thomas Frist, Jr.",Frist,thomas-frist-jr,thomas-frist-jr,-10.481,79,health care,Healthcare,M,1516704901086,"Nashville, TN",Tennessee,9202.128,55,55
+Stanley Kroenke,Kroenke,stanley-kroenke,stanley-kroenke,0,70,"sports, real estate",Sports,M,1516704901086,"Columbia, MO",Missouri,8102,65,65
+James Chambers,Chambers,james-chambers,no-pic,0,60,media,Media & Entertainment,M,1516704901086,"Palisades, NY",New York,8461.094,59,59
+Katharine Rayner,Rayner,katharine-rayner,no-pic-female,0,73,media,Media & Entertainment,F,1516704901086,"East Hampton, NY",New York,8461.094,59,60
+Margaretta Taylor,Taylor,margaretta-taylor,no-pic-female,0,75,media,Media & Entertainment,F,1516704901086,"Southampton, NY",New York,8461.094,59,61
+"Edward Johnson, III.",Johnson,edward-johnson-iii,edward-johnson-iii,0,87,money management,Finance and Investments,M,1516704901086,"Boston, MA",Massachusetts,9801.153,53,53
+David Geffen,Geffen,david-geffen,david-geffen,-15.3,74,"movies, record labels",Media & Entertainment,M,1516704901086,"Beverly Hills, CA",California,8358.288,62,62
+John Paulson,Paulson,john-paulson,john-paulson,0,62,hedge funds,Finance and Investments,M,1516704901086,"New York, NY",New York,7800,69,69
+Carl Cook,Cook,carl-cook,carl-cook,0,55,medical devices,Healthcare,M,1516704901086,"Bloomington, IN",Indiana,8503.313,58,58
+David Duffield,Duffield,david-duffield,david-duffield,73.538,77,business software,Technology,M,1516704901086,"Incline Village, NV",Nevada,8158.494,64,64
+George Kaiser,Kaiser,george-kaiser,george-kaiser,0.864,75,"oil & gas, banking",Energy,M,1516704901086,"Tulsa, OK",Oklahoma,7970.659,67,67
+Gordon Moore,Moore,gordon-moore,gordon-moore,146.605,89,Intel,Technology,M,1516704901086,"Woodside, CA",California,8815.761,56,56
+Stephen Ross,Ross,stephen-ross,stephen-ross,0,77,real estate,Real Estate,M,1516704901086,"New York, NY",New York,7550.04,72,72
+Pauline MacMillan Keinath,Keinath,pauline-macmillan-keinath,no-pic-female,0,84,Cargill,Food and Beverage,F,1516704901086,"St. Louis, MO",Missouri,7620.371,71,71
+Eli Broad,Broad,eli-broad,eli-broad,0,84,investments,Finance and Investments,M,1516704901086,"Los Angeles, CA",California,7260,76,76
+Shahid Khan,Khan,shahid-khan,shahid-khan,0,67,auto parts,Automotive,M,1516704901086,"Naples, FL",Florida,7491.201,73,73
+Hank & Doug Meijer,Meijer,hank-doug-meijer,hank-doug-meijer,0,,supermarkets,Fashion & Retail,M,1516704901086,"Grand Rapids, MI",Michigan,9355.297,54,54
+Richard Kinder,Kinder,richard-kinder,richard-kinder,145.728,73,pipelines,Energy,M,1516704901086,"Houston, TX",Texas,6773.933,82,82
+John A. Sobrato,Sobrato,john-a-sobrato,john-a-sobrato,0,78,real estate,Real Estate,M,1516704901086,"Atherton, CA",California,6788.586,81,81
+Brian Acton,Acton,brian-acton,brian-acton,131.617,45,WhatsApp,Technology,M,1516704901086,"Palo Alto, CA",California,6903.429,80,80
+Leon Black,Black,leon-black,leon-black,-7.418,66,private equity,Finance and Investments,M,1516704901086,"New York, NY",New York,6707.808,83,83
+David Green,Green,david-green,david-green,0,76,retail,Fashion & Retail,M,1516704901086,"Oklahoma City, OK",Oklahoma,7471.127,74,74
+Marijke Mars,Mars,marijke-mars,no-pic-female,,53,"candy, pet food",Food and Beverage,F,1508260560334,,,,,
+Pamela Mars,Mars,pamela-mars,no-pic-female,,57,"candy, pet food",Food and Beverage,F,1508260560338,,,,,
+Valerie Mars,Mars,valerie-mars,no-pic-female,,58,"candy, pet food",Food and Beverage,F,1508260560943,"New York, NY",New York,,,
+Victoria Mars,Mars,victoria-mars,no-pic-female,,61,"candy, pet food",Food and Beverage,F,1508260555641,"Newtown Square, PA",Pennsylvania,,,
+Robert Kraft,Kraft,robert-kraft,robert-kraft,0,76,New England Patriots,Sports,M,1516704901086,"Brookline, MA",Massachusetts,6199,89,89
+Tom & Judy Love,Love,tom-judy-love,tom-judy-love,0,81,retail & gas stations,Fashion & Retail,,1516704901086,"Oklahoma City, OK",Oklahoma,5842.325,102,102
+Richard LeFrak,LeFrak,richard-lefrak,richard-lefrak,2.48,72,real estate,Real Estate,M,1516704901086,"New York, NY",New York,5972.87,99,99
+Christy Walton,Walton,christy-walton,christy-walton,48.096,68,Wal-Mart,Fashion & Retail,F,1516704901086,"Jackson, WY",Wyoming,7691.196,70,70
+Charles Johnson,Johnson,charles-johnson,charles-johnson,47.076,85,money management,Finance and Investments,M,1516704901086,"Palm Beach, FL",Florida,6292.119,86,86
+Whitney MacMillan,MacMillan,whitney-macmillan,whitney-macmillan,0,88,Cargill,Food and Beverage,M,1516704901086,"Minneapolis, MN",Minnesota,6206.043,88,88
+David Sun,Sun,david-sun,david-sun,0,66,computer hardware,Technology,M,1516704901086,"Irvine, CA",California,7022.324,77,77
+John Tu,Tu,john-tu,john-tu,0,76,computer hardware,Technology,M,1516704901086,"Rolling Hills, CA",California,7022.324,77,78
+John Doerr,Doerr,john-doerr,john-doerr,129.977,66,venture capital,Technology,M,1516704901086,"Woodside, CA",California,7272.502,75,75
+Daniel Gilbert,Gilbert,daniel-gilbert,daniel-gilbert,0,56,Quicken Loans,Finance and Investments,M,1516704901086,"Franklin, MI",Michigan,6329.983,85,85
+Ralph Lauren,Lauren,ralph-lauren,ralph-lauren,50.096,78,Ralph Lauren,Fashion & Retail,M,1516704901086,"New York, NY",New York,6534.883,84,84
+Dennis Washington,Washington,dennis-washington,dennis-washington,6.715,83,"construction, mining",Logistics,M,1516704901086,"Missoula, MT",Montana,6161.727,90,90
+Jerry Jones,Jones,jerry-jones,jerry-jones,0,75,Dallas Cowboys,Sports,M,1516704901086,"Dallas, TX",Texas,5575,108,108
+Les Wexner,Wexner,les-wexner,les-wexner,63.121,80,retail,Fashion & Retail,M,1516704901086,"New Albany, OH",Ohio,6232.504,87,87
+Dannine Avara,Avara,dannine-avara,no-pic-female,126.812,53,pipelines,Energy,F,1516704901086,"Houston, TX",Texas,6083.11,96,96
+Scott Duncan,Duncan,scott-duncan,no-pic,126.812,35,pipelines,Energy,M,1516704901086,"Houston, TX",Texas,6083.11,96,98
+Milane Frantz,Frantz,milane-frantz,milane-frantz,126.812,48,pipelines,Energy,F,1516704901086,"Houston, TX",Texas,6083.11,96,97
+Ann Walton Kroenke,Kroenke,ann-walton-kroenke,ann-walton-kroenke,47.3,69,Wal-Mart,Fashion & Retail,F,1516704901086,"Columbia, MO",Missouri,6943.75,79,79
+Gabe Newell,Newell,gabe-newell,gabe-newell,0,55,videogames,Gambling & Casinos,M,1516704901086,"Seattle, WA",Washington,5500,112,112
+Steven Rales,Rales,steven-rales,steven-rales,-30.578,66,manufacturing,Manufacturing,M,1516704901086,"Santa Barbara, CA",California,5907.434,101,101
+"Robert Rich, Jr.",Rich,robert-rich-jr,robert-rich-jr,0,76,frozen foods,Food and Beverage,M,1516704901086,"Islamorada, FL",Florida,6112.356,92,92
+"Edward Roski, Jr.",Roski,edward-roski-jr,edward-roski-jr,0,79,real estate,Real Estate,M,1516704901086,"Los Angeles, CA",California,5801.984,103,103
+David Shaw,Shaw,david-shaw,david-shaw,0,66,hedge funds,Finance and Investments,M,1516704901086,"New York, NY",New York,5475.2,114,114
+Randa Williams,Williams,randa-williams,randa-williams,126.821,56,pipelines,Energy,F,1516704901086,"Houston, TX",Texas,6083.492,95,95
+Richard DeVos,DeVos,richard-devos,richard-devos,0,91,Amway,Service,M,1516704901086,"Holland, MI",Michigan,5518.312,110,110
+Israel Englander,Englander,israel-englander,israel-englander,0,69,hedge funds,Finance and Investments,M,1516704901086,"New York, NY",New York,5200,121,121
+Marian Ilitch,Ilitch,marian-ilitch-1,no-pic-female,0,85,"pizza, sports team",Food and Beverage,F,1516704901086,"Bingham Farms, MI",Michigan,5613.793,106,106
+"Rupert Johnson, Jr.",Johnson,rupert-johnson-jr,no-pic,48.485,77,money management,Finance and Investments,M,1516704901086,"Burlingame, CA",California,5505.546,111,111
+Bruce Kovner,Kovner,bruce-kovner,bruce-kovner,0,72,hedge funds,Finance and Investments,M,1516704901086,"New York, NY",New York,5240,120,120
+Henry Kravis,Kravis,henry-kravis,henry-kravis,21.002,74,private equity,Finance and Investments,M,1516704901086,"New York, NY",New York,5462.841,115,115
+George Roberts,Roberts,george-roberts,george-roberts,21.98,74,private equity,Finance and Investments,M,1516704901086,"Atherton, CA",California,5520.941,109,109
+Robert Rowling,Rowling,robert-rowling,robert-rowling,0.496,64,investments,Energy,M,1516704901086,"Dallas, TX",Texas,6087.222,94,94
+Travis Kalanick,Kalanick,travis-kalanick,travis-kalanick,0,41,Uber,Technology,M,1516704901086,"San Francisco, CA",California,4785,145,145
+Sumner Redstone,Redstone,sumner-redstone,sumner-redstone,5.221,94,media,Media & Entertainment,M,1516704901086,"Beverly Hills, CA",California,5108.397,126,126
+Sam Zell,Zell,sam-zell,sam-zell,13.252,76,"real estate, private equity",Real Estate,M,1516704901086,"Chicago, IL",Illinois,5024.5,128,128
+Charles Dolan,Dolan,charles-dolan,charles-dolan,14.238,91,cable television,Media & Entertainment,M,1516704901086,"Oyster Bay, NY",New York,4985.557,131,131
+David Filo,Filo,david-filo,david-filo,156.026,51,Yahoo,Technology,M,1516704901086,"Palo Alto, CA",California,5462.618,116,116
+George Lucas,Lucas,george-lucas,george-lucas,18.909,73,Star Wars,Media & Entertainment,M,1516704901086,"San Anselmo, CA",California,5489.594,113,113
+Reinhold Schmieding,Schmieding,reinhold-schmieding,reinhold-schmieding,0,63,medical devices,Healthcare,M,1516704901086,"Naples, FL",Florida,5176.69,124,124
+Robert Bass,Bass,robert-bass,robert-bass,12.764,69,"oil, investments",Energy,M,1516704901086,"Fort Worth, TX",Texas,5023.965,129,129
+Jim Davis,Davis,jim-davis,jim-davis,0,74,New Balance,Manufacturing,M,1516704901086,"Newton, MA",Massachusetts,6125.481,91,91
+Tamara Gustavson,Gustavson,tamara-gustavson,no-pic-female,6.221,56,self storage,Service,F,1516704901086,"Malibu, CA",California,4526.143,154,154
+Diane Hendricks,Hendricks,diane-hendricks,diane-hendricks,0,70,roofing,Construction & Engineering,F,1516704901086,"Afton, WI",Wisconsin,5658.549,105,105
+Ray Lee Hunt,Hunt,ray-lee-hunt,ray-lee-hunt,-1.672,74,"oil, real estate",Energy,M,1516704901086,"Dallas, TX",Texas,4939.945,135,135
+Nancy Walton Laurie,Laurie,nancy-walton-laurie,nancy-walton-laurie,40.635,66,Wal-Mart,Fashion & Retail,F,1516704901086,"Henderson, NV",Nevada,6092.513,93,93
+Ted Lerner,Lerner,ted-lerner,ted-lerner,0,92,real estate,Real Estate,M,1516704901086,"Chevy Chase, MD",Maryland,4999.016,130,130
+John Overdeck,Overdeck,john-overdeck,john-overdeck,0,48,hedge funds,Finance and Investments,M,1516704901086,"Millburn, NJ",New Jersey,4940,133,134
+David Siegel,Siegel,david-siegel-1,david-siegel-1,0,56,hedge funds,Finance and Investments,M,1516704901086,"Scarsdale, NY",New York,4940,133,133
+Frederick Smith,Smith,frederick-smith,frederick-smith,-8.367,73,FedEx,Logistics,M,1516704901086,"Memphis, TN",Tennessee,5915.985,100,100
+Karen Pritzker,Pritzker,karen-pritzker,karen-pritzker,-3.643,60,"hotels, investments",Service,F,1516704901086,"Branford, CT",Connecticut,5095.946,127,127
+Trevor Rees-Jones,Rees-Jones,trevor-rees-jones,trevor-rees-jones,1.964,66,oil & gas,Energy,M,1516704901086,"Dallas, TX",Texas,4787.364,144,144
+Alejandro Santo Domingo,Santo Domingo,alejandro-santo-domingo,alejandro-santo-domingo,-26.549,40,beer,Food and Beverage,M,1516704901086,"New York, NY",New York,4708.942,150,150
+Andres Santo Domingo,Santo Domingo,andres-santo-domingo,andres-santo-domingo,-26.556,39,beer,Food and Beverage,M,1516704901086,"New York, NY",New York,4712.865,149,149
+Ronda Stryker,Stryker,ronda-stryker,ronda-stryker,29.557,63,medical equipment,Healthcare,F,1516704901086,"Portage, MI",Michigan,5327.827,118,118
+Daniel Ziff,Ziff,daniel-ziff,daniel-ziff,0,46,investments,Finance and Investments,M,1516704901086,"New York, NY",New York,4800,140,140
+Dirk Ziff,Ziff,dirk-ziff,dirk-ziff,0,53,investments,Finance and Investments,M,1516704901086,"North Palm Beach, FL",Florida,4800,140,141
+Robert Ziff,Ziff,robert-ziff,robert-ziff,0,51,investments,Finance and Investments,M,1516704901086,"New York, NY",New York,4800,140,142
+Stanley Druckenmiller,Druckenmiller,stanley-druckenmiller,stanley-druckenmiller,0,64,hedge funds,Finance and Investments,M,1516704901086,"New York, NY",New York,4672,151,151
+Martha Ingram,Ingram,martha-ingram,martha-ingram,0,82,"book distribution, transportation",Media & Entertainment,F,1516704901086,"Nashville, TN",Tennessee,5432.488,117,117
+Gwendolyn Sontheim Meyer,Meyer,gwendolyn-sontheim-meyer,no-pic-female,0,56,Cargill,Food and Beverage,F,1516704901086,"Rancho Santa Fe, CA",California,4790.894,143,143
+Sheldon Solow,Solow,sheldon-solow,sheldon-solow,0,89,real estate,Real Estate,M,1516704901086,"New York, NY",New York,4713.1,148,148
+Bubba Cathy,Cathy,bubba-cathy,bubba-cathy,0,63,Chick-fil-A,Food and Beverage,M,1516704901086,"Atlanta, GA",Georgia,5184.204,122,122
+Dan Cathy,Cathy,dan-cathy,dan-cathy,0,64,Chick-fil-A,Food and Beverage,M,1516704901086,"Atlanta, GA",Georgia,5184.204,122,123
+Bruce Halle,Halle,bruce-halle,bruce-halle,,87,tires,Automotive,M,1515113479069,,,,,
+"Paul Tudor Jones, II.",Jones,paul-tudor-jones-ii,paul-tudor-jones-ii,0,63,hedge funds,Finance and Investments,M,1516704901086,"Greenwich, CT",Connecticut,4553.4,153,153
+Gary Rollins,Rollins,gary-rollins,no-pic,54.759,73,pest control,Service,M,1516704901086,"Atlanta, GA",Georgia,4928.677,136,136
+Randall Rollins,Rollins,randall-rollins,randall-rollins,54.759,86,pest control,Service,M,1516704901086,"Atlanta, GA",Georgia,4928.677,136,137
+Marc Benioff,Benioff,marc-benioff,marc-benioff,34.699,53,business software,Technology,M,1516704901086,"San Francisco, CA",California,5168.927,125,125
+Nick Caporella,Caporella,nick-caporella,no-pic,-64.038,82,beverages,Food and Beverage,M,1516704901086,"Plantation, FL",Florida,4014.817,180,180
+Rocco Commisso,Commisso,rocco-commisso,no-pic,,68,telecom,Telecom,M,1508260630091,"Saddle River, NJ",New Jersey,,,
+Bernard Marcus,Marcus,bernard-marcus,bernard-marcus,78.25,88,Home Depot,Fashion & Retail,M,1516704901086,"Atlanta, GA",Georgia,5595.5,107,107
+John Sall,Sall,john-sall,john-sall,0,69,software,Technology,M,1516704901086,"Cary, NC",North Carolina,5267.15,119,119
+Leonard Stern,Stern,leonard-stern,leonard-stern,0,79,real estate,Real Estate,M,1516704901086,"New York, NY",New York,4488.304,156,156
+Jen-Hsun Huang,Huang,jen-hsun-huang,jen-hsun-huang,85.227,54,semiconductors,Technology,M,1516704901086,"Los Altos, CA",California,5747.261,104,104
+"Jeremy Jacobs, Sr.",Jacobs,jeremy-jacobs-sr,jeremy-jacobs-sr,0,78,concessions,Service,M,1516704901086,"East Aurora, NY",New York,4830.387,138,138
+Jeffrey Skoll,Skoll,jeffrey-skoll,jeffrey-skoll,57.4,53,eBay,Technology,M,1516704901086,"Palo Alto, CA",California,4977.722,132,132
+Russ Weiner,Weiner,russ-weiner,russ-weiner,0,47,energy drinks,Food and Beverage,M,1516704901086,"Delray Beach, FL",Florida,4394,158,158
+Terrence Pegula,Pegula,terrence-pegula,terrence-pegula,0,66,natural gas,Energy,M,1516704901086,"Boca Raton, FL",Florida,4348,160,160
+"Austen Cargill, II.",Cargill,austen-cargill-ii,no-pic,0,66,Cargill,Food and Beverage,M,1516704901086,"Livingston, MT",Montana,4347.678,161,161
+"James Cargill, II.",Cargill,james-cargill-ii,no-pic,0,68,Cargill,Food and Beverage,M,1516704901086,"Birchwood, WI",Wisconsin,4347.678,161,162
+Marianne Liebmann,Liebmann,marianne-liebmann,no-pic-female,0,64,Cargill,Food and Beverage,F,1516704901086,"Bozeman, MT",Montana,4347.678,161,163
+Igor Olenicoff,Olenicoff,igor-olenicoff,igor-olenicoff,0,75,real estate,Real Estate,M,1516704901086,"Lighthouse Point, FL",Florida,4225.54,171,171
+"Walter Scott, Jr.",Scott,walter-scott-jr,walter-scott-jr,1.714,86,"utilities, telecom",Energy,M,1516704901086,"Omaha, NE",Nebraska,4200.11,172,172
+Kelcy Warren,Warren,kelcy-warren,kelcy-warren,118.626,62,pipelines,Energy,M,1516704901086,"Dallas, TX",Texas,4471.693,157,157
+Archie Aldis Emmerson,Emmerson,archie-aldis-emmerson,archie-aldis-emmerson,0,88,"timberland, lumber mills",Manufacturing,M,1516704901086,"Redding, CA",California,4295.752,167,167
+"H. Ross Perot, Sr.",Perot,h-ross-perot-sr,h-ross-perot-sr,0,87,"computer services, real estate",Diversified,M,1516704901086,"Dallas, TX",Texas,4186.288,173,173
+J. Christopher Reyes,Reyes,j-christopher-reyes,j-christopher-reyes,0,64,food distribution,Food and Beverage,M,1516704901086,"Hobe Sound, FL",Florida,4730.358,146,146
+Jude Reyes,Reyes,jude-reyes,no-pic,0,62,food distribution,Food and Beverage,M,1516704901086,"Palm Beach, FL",Florida,4730.358,146,147
+"Julian Robertson, Jr.",Robertson,julian-robertson-jr,julian-robertson-jr,0,85,hedge funds,Finance and Investments,M,1516704901086,"Locust Valley, NY",New York,4130,176,176
+Ben Ashkenazy,Ashkenazy,ben-ashkenazy,no-pic,,48,real estate,Real Estate,M,1508260637913,"New York, NY",New York,,,
+Stephen Bisciotti,Bisciotti,stephen-bisciotti,stephen-bisciotti,0,57,"staffing, Baltimore Ravens",Sports,M,1516704901086,"Millersville, MD",Maryland,4271.471,168,168
+James Jannard,Jannard,james-jannard,james-jannard,0,68,sunglasses,Fashion & Retail,M,1516704901086,"San Juan Islands, WA",Washington,4297.298,165,165
+John Morris,Morris,john-morris,john-morris,0,69,sporting goods retail,Fashion & Retail,M,1516704901086,"Springfield, MO",Missouri,4828.478,139,139
+"Clemmie Spangler, Jr.",Spangler,clemmie-spangler-jr,clemmie-spangler-jr,5.739,85,investments,Finance and Investments,M,1516704901086,"Charlotte, NC",North Carolina,4590.78,152,152
+Jeff Sutton,Sutton,jeff-sutton,no-pic,0,58,real estate,Real Estate,M,1516704901086,"New York, NY",New York,3956.5,188,188
+Joan Tisch,Tisch,joan-tisch,joan-tisch,,90,diversified,Finance and Investments,F,1509730987109,,,,,
+Rick Caruso,Caruso,rick-caruso,rick-caruso,0,59,real estate,Real Estate,M,1516704901086,"Brentwood, CA",California,3949.8,190,190
+Dagmar Dolby,Dolby,dagmar-dolby,dagmar-dolby,-0.428,76,Dolby Laboratories,Technology,F,1516704901086,"San Francisco, CA",California,4129.851,177,177
+Isaac Perlmutter,Perlmutter,isaac-perlmutter,isaac-perlmutter,12.979,75,Marvel comics,Media & Entertainment,M,1516704901086,"Palm Beach, FL",Florida,4232.495,170,170
+Stewart and Lynda Resnick,Resnick,stewart-and-lynda-resnick,stewart-and-lynda-resnick,0,,"agriculture, water",Food and Beverage,,1516704901086,"Beverly Hills, CA",California,3918.738,195,195
+Jerry Speyer,Speyer,jerry-speyer,jerry-speyer,0,77,real estate,Real Estate,M,1516704901086,"New York, NY",New York,3947.718,191,191
+Harry Stine,Stine,harry-stine,harry-stine,-0.425,76,agriculture,Food and Beverage,M,1516704901086,"Adel, IA",Iowa,3942.142,192,192
+Steven Udvar-Hazy,Udvar-Hazy,steven-udvar-hazy,steven-udvar-hazy,3.807,71,aircraft leasing,Service,M,1516704901086,"Beverly Hills, CA",California,3955.242,189,189
+Arthur Blank,Blank,arthur-blank,arthur-blank,34.43,75,Home Depot,Sports,M,1516704901086,"Atlanta, GA",Georgia,4319.171,164,164
+Nathan Blecharczyk,Blecharczyk,nathan-blecharczyk,nathan-blecharczyk,0,34,Airbnb,Technology,M,1516704901086,"San Francisco, CA",California,3800,198,200
+Brian Chesky,Chesky,brian-chesky,brian-chesky,0,36,Airbnb,Technology,M,1516704901086,"San Francisco, CA",California,3800,198,198
+Joe Gebbia,Gebbia,joe-gebbia,joe-gebbia,0,36,Airbnb,Technology,M,1516704901086,"San Francisco, CA",California,3800,198,199
+Jeff Greene,Greene,jeff-greene,jeff-greene,0,63,"real estate, investments",Real Estate,M,1516704901086,"Palm Beach, FL",Florida,3785,202,202
+H. Fisk Johnson,Johnson,h-fisk-johnson,h-fisk-johnson,-2.056,59,cleaning products,Manufacturing,M,1516704901086,"Racine, WI",Wisconsin,3926.703,193,193
+Imogene Powers Johnson,Johnson,imogene-powers-johnson,imogene-powers-johnson,-2.056,87,cleaning products,Manufacturing,F,1516704901086,"Racine, WI",Wisconsin,3956.703,184,185
+S. Curtis Johnson,Johnson,s-curtis-johnson,s-curtis-johnson,-2.056,62,cleaning products,Manufacturing,M,1516704901086,"Racine, WI",Wisconsin,3956.703,184,186
+Helen Johnson-Leipold,Johnson-Leipold,helen-johnson-leipold,helen-johnson-leipold,-2.056,61,cleaning products,Manufacturing,F,1516704901086,"Racine, WI",Wisconsin,3956.703,184,184
+Winifred Johnson-Marquart,Johnson-Marquart,winifred-johnson-marquart,no-pic-female,-2.056,58,cleaning products,Manufacturing,F,1516704901086,"Virginia Beach, VA",Virginia,3956.703,184,187
+Ronald Lauder,Lauder,ronald-lauder,ronald-lauder,2.378,73,Estee Lauder,Fashion & Retail,M,1516704901086,"New York, NY",New York,3991.486,183,183
+Robert McNair,McNair,robert-mcnair,robert-mcnair,0,81,"energy, sports",Sports,M,1516704901086,"Houston, TX",Texas,3754.72,204,204
+Ira Rennert,Rennert,ira-rennert,ira-rennert,0,83,investments,Finance and Investments,M,1516704901086,"New York, NY",New York,3848,196,196
+Henry Samueli,Samueli,henry-samueli,henry-samueli,-40.913,63,semiconductors,Technology,M,1516704901086,"Newport Beach, CA",California,4004.509,181,181
+Jack & Laura Dangermond,Dangermond,jack-laura-dangermond,no-pic,0,72,mapping software,Technology,,1516704901086,"Redlands, CA",California,4295.805,166,166
+Ken Fisher,Fisher,ken-fisher,ken-fisher,0,67,money management,Finance and Investments,M,1516704901086,"Camas, WA",Washington,4156.295,175,175
+Dan Friedkin,Friedkin,dan-friedkin,dan-friedkin,0,52,Toyota dealerships,Automotive,M,1516704901086,"Houston, TX",Texas,4114.908,178,178
+Tom Gores,Gores,tom-gores,tom-gores,1.587,53,private equity,Finance and Investments,M,1516704901086,"Beverly Hills, CA",California,3724.844,208,208
+Michael Milken,Milken,michael-milken,michael-milken,4.335,71,investments,Finance and Investments,M,1516704901086,"Los Angeles, CA",California,3735.503,206,206
+Thomas Pritzker,Pritzker,thomas-pritzker,thomas-pritzker,2.937,67,"hotels, investments",Finance and Investments,M,1516704901086,"Chicago, IL",Illinois,4160.925,174,174
+Jimmy Haslam,Haslam,jimmy-haslam,jimmy-haslam,0,63,"gas stations, retail",Fashion & Retail,M,1516704901086,"Knoxville, TN",Tennessee,3436.546,227,227
+Jeffery Hildebrand,Hildebrand,jeffery-hildebrand,jeffery-hildebrand,0,58,oil,Energy,M,1516704901086,"Houston, TX",Texas,3993.053,182,182
+"Edward Johnson, IV.",Johnson,edward-johnson-iv,no-pic,,53,money management,Finance and Investments,M,1508260656925,"Boston, MA",Massachusetts,,,
+Elizabeth Johnson,Johnson,elizabeth-johnson,no-pic-female,,54,money management,Finance and Investments,F,1508260656916,"Boston, MA",Massachusetts,,,
+Rishi Shah,Shah,rishi-shah,no-pic,,32,healthcare media,Technology,M,1508260656285,"Chicago, IL",Illinois,,,
+Steven Spielberg,Spielberg,steven-spielberg,steven-spielberg,0,71,Movies,Media & Entertainment,M,1516704901086,"Pacific Palisades, CA",California,3630,213,213
+Tilman Fertitta,Fertitta,tilman-fertitta,tilman-fertitta,0,60,"restaurants, casinos",Food and Beverage,M,1516704901086,"Houston, TX",Texas,3762.601,203,203
+Michael Moritz,Moritz,michael-moritz,michael-moritz,54.938,63,venture capital,Technology,M,1516704901086,"San Francisco, CA",California,4236.051,169,169
+Rodger Riney,Riney,rodger-riney,rodger-riney,,72,discount brokerage,Finance and Investments,M,1508260666571,"St. Louis, MO",Missouri,,,
+Leandro Rizzuto,Rizzuto,leandro-rizzuto,no-pic,0,79,consumer products,Manufacturing,M,1516704901086,"Sheridan, WY",Wyoming,3520.641,219,219
+"Bernard Saul, II.",Saul,bernard-saul-ii,bernard-saul-ii,-1.394,85,"banking, real estate",Finance and Investments,M,1516704901086,"Chevy Chase, MD",Maryland,3651.237,212,212
+Donald Sterling,Sterling,donald-sterling,donald-sterling,0,83,real estate,Real Estate,M,1516704901086,"Beverly Hills, CA",California,3530.7,218,218
+Anita Zucker,Zucker,anita-zucker,no-pic-female,-0.276,66,chemicals,Manufacturing,F,1516704901086,"Charleston, SC",South Carolina,3921.999,194,194
+Sid Bass,Bass,sid-bass,sid-bass,36.3,75,"oil, investments",Energy,M,1516704901086,"Fort Worth, TX",Texas,3712.25,209,209
+Judy Faulkner,Faulkner,judy-faulkner,judy-faulkner,0,74,health IT,Technology,F,1516704901086,"Madison, WI",Wisconsin,3812.17,197,197
+Peter Kellogg,Kellogg,peter-kellogg,no-pic,41.769,75,investments,Finance and Investments,M,1516704901086,"Short Hills, NJ",New Jersey,3793.422,201,201
+Anthony Pritzker,Pritzker,anthony-pritzker,anthony-pritzker,0.256,57,"hotels, investments",Service,M,1516704901086,"Los Angeles, CA",California,3463.68,225,225
+Jay Robert (J.B.) Pritzker,Pritzker,jay-robert-jb-pritzker,jay-robert-jb-pritzker,0.256,53,"hotels, investments",Finance and Investments,M,1516704901086,"Chicago, IL",Illinois,3463.68,225,226
+Mitchell Rales,Rales,mitchell-rales,mitchell-rales,-20.281,61,"manufacturing, investments",Manufacturing,M,1516704901086,"Potomac, MD",Maryland,3710.017,210,210
+Richard Schulze,Schulze,richard-schulze,richard-schulze,46.176,77,Best Buy,Fashion & Retail,M,1516704901086,"Bonita Springs, FL",Florida,4355.749,159,159
+John Arnold,Arnold,john-arnold,john-arnold,0,43,hedge funds,Finance and Investments,M,1516704901086,"Houston, TX",Texas,3285,241,241
+Neil Bluhm,Bluhm,neil-bluhm,neil-bluhm,0,80,real estate,Real Estate,M,1516704901086,"Chicago, IL",Illinois,3283.034,242,242
+Andrew & Peggy Cherng,Cherng,andrew-peggy-cherng,andrew-peggy-cherng,1.721,,restaurants,Food and Beverage,,1516704901086,"Las Vegas, NV",Nevada,3657.272,211,211
+Charles Cohen,Cohen,charles-cohen,no-pic,0,65,real estate,Real Estate,M,1516704901086,"New York, NY",New York,3346.7,234,234
+Mark Cuban,Cuban,mark-cuban,mark-cuban,-0.047,59,online media,Media & Entertainment,M,1516704901086,"Dallas, TX",Texas,3318.094,238,238
+Joshua Harris,Harris,joshua-harris,joshua-harris,-4.338,53,private equity,Finance and Investments,M,1516704901086,"New York, NY",New York,3532.918,217,217
+"Amos Hostetter, Jr.",Hostetter,amos-hostetter-jr,amos-hostetter-jr,6.752,81,cable television,Media & Entertainment,M,1516704901086,"Boston, MA",Massachusetts,3377.179,232,232
+Randal Kirk,Kirk,randal-kirk,randal-kirk,38.618,63,pharmaceuticals,Healthcare,M,1516704901086,"Lake Worth, FL",Florida,3008.003,269,269
+George Lindemann,Lindemann,george-lindemann,george-lindemann,64.16,81,investments,Finance and Investments,M,1516704901086,"Palm Beach, FL",Florida,3477.294,224,224
+Mary Alice Dorrance Malone,Malone,mary-alice-dorrance-malone,no-pic-female,13.823,67,Campbell Soup,Food and Beverage,F,1516704901086,"Coatesville, PA",Pennsylvania,3427.305,228,228
+"Henry Nicholas, III.",Nicholas,henry-nicholas-iii,henry-nicholas-iii,-49.041,58,semiconductors,Technology,M,1516704901086,"Newport Coast, CA",California,3622.926,214,214
+Daniel Och,Och,daniel-och,daniel-och,4.708,56,hedge funds,Finance and Investments,M,1516704901086,"Scarsdale, NY",New York,3222.193,247,247
+Mark Shoen,Shoen,mark-shoen,no-pic,18.988,67,U-Haul,Automotive,M,1516704901086,"Phoenix, AZ",Arizona,3282.677,243,243
+Robert Smith,Smith,robert-smith,robert-smith,0,55,private equity,Finance and Investments,M,1516704901086,"Austin, TX",Texas,3339,235,235
+Barry Diller,Diller,barry-diller,barry-diller,31.519,75,online media,Media & Entertainment,M,1516704901086,"New York, NY",New York,3255.974,245,245
+Phillip Frost,Frost,phillip-frost,phillip-frost,-3.768,81,pharmaceuticals,Healthcare,M,1516704901087,"Miami Beach, FL",Florida,2775.435,296,296
+Reid Hoffman,Hoffman,reid-hoffman,reid-hoffman,11.67,50,LinkedIn,Technology,M,1516704901086,"Palo Alto, CA",California,3277.494,244,244
+Douglas Leone,Leone,douglas-leone,douglas-leone,47.713,60,venture capital,Finance and Investments,M,1516704901086,"Atherton, CA",California,3752.099,205,205
+Daniel Loeb,Loeb,daniel-loeb,daniel-loeb,0,56,hedge funds,Finance and Investments,M,1516704901086,"New York, NY",New York,3194.992,250,250
+Robert Pera,Pera,robert-pera,robert-pera,30.39,39,wireless networking gear,Technology,M,1516704901086,"San Jose, CA",California,4511.943,155,155
+Haim Saban,Saban,haim-saban,haim-saban,8.272,73,"TV network, investments",Media & Entertainment,M,1516704901086,"Beverly Hills, CA",California,3290.61,240,240
+Lynn Schusterman,Schusterman,lynn-schusterman,lynn-schusterman,0,79,"oil & gas, investments",Energy,F,1516704901086,"Tulsa, OK",Oklahoma,3200,248,248
+John Brown,Brown,john-brown,john-brown,24.916,83,medical equipment,Healthcare,M,1516704901086,"Portage, MI",Michigan,3499.224,222,222
+John Catsimatidis,Catsimatidis,john-catsimatidis,john-catsimatidis,0,69,"oil, real estate",Energy,M,1516704901086,"New York, NY",New York,3110,259,259
+Leon G. Cooperman,Cooperman,leon-g-cooperman,leon-g-cooperman,0,74,hedge funds,Finance and Investments,M,1516704901086,"Short Hills, NJ",New Jersey,3125,255,255
+John Paul DeJoria,DeJoria,john-paul-dejoria,john-paul-dejoria,0,73,"hair products, tequila",Fashion & Retail,M,1516704901086,"Austin, TX",Texas,3386.52,229,229
+Allan Goldman,Goldman,allan-goldman,no-pic,0,74,real estate,Real Estate,M,1516704901086,"New York, NY",New York,3094.065,261,261
+Jane Goldman,Goldman,jane-goldman,no-pic-female,0,62,real estate,Real Estate,F,1516704901086,"New York, NY",New York,3123.22,256,256
+Amy Goldman Fowler,Goldman Fowler,amy-goldman-fowler,no-pic-female,0,63,real estate,Real Estate,F,1516704901086,"Rhinebeck, NY",New York,3113,258,258
+Min Kao,Kao,min-kao,min-kao,6.554,69,navigation equipment,Technology,M,1516704901086,"Leawood, KS",Kansas,3500.69,221,221
+Diane Kemper,Kemper,diane-kemper,no-pic-female,0,72,real estate,Real Estate,F,1516704901086,"New York, NY",New York,3101.6,260,260
+Kenneth Langone,Langone,kenneth-langone,kenneth-langone,29.036,82,investments,Finance and Investments,M,1516704901086,"Sands Point, NY",New York,3489.028,223,223
+Bobby Murphy,Murphy,bobby-murphy,bobby-murphy,27.426,29,Snapchat,Technology,M,1516704901086,"Venice, CA",California,3199.345,249,249
+Marc Rowan,Rowan,marc-rowan,marc-rowan,-3.559,55,private equity,Finance and Investments,M,1516704901086,"New York, NY",New York,3295.321,239,239
+Evan Spiegel,Spiegel,evan-spiegel,evan-spiegel,26.996,27,Snapchat,Technology,M,1516704901086,"Los Angeles, CA",California,3149.786,254,254
+Pat Stryker,Stryker,pat-stryker,pat-stryker,22.665,61,medical equipment,Healthcare,F,1516704901086,"Fort Collins, CO",Colorado,3503.588,220,220
+Donald Trump,Trump,donald-trump,donald-trump,0,71,"television, real estate",Real Estate,M,1516704901086,"Washington, DC",District of Columbia,3121.415,257,257
+Steve Wynn,Wynn,steve-wynn,steve-wynn,188.483,75,"casinos, hotels",Gambling & Casinos,M,1516704901086,"Las Vegas, NV",Nevada,3728.331,207,207
+Clifford Asness,Asness,clifford-asness,no-pic,0,51,hedge funds,Finance and Investments,M,1516704901086,"Greenwich, CT",Connecticut,3000,270,270
+Riley Bechtel,Bechtel,riley-bechtel,riley-bechtel,0,65,"engineering, construction",Construction & Engineering,M,1516704901086,"San Francisco, CA",California,3534.338,215,215
+"Stephen Bechtel, Jr.",Bechtel,stephen-bechtel-jr,stephen-bechtel-jr,0,92,"engineering, construction",Construction & Engineering,M,1516704901086,"San Francisco, CA",California,3534.338,215,216
+Chuck Bundrant,Bundrant,chuck-bundrant,no-pic,,75,fishing,Food and Beverage,M,1508262933001,"Seattle, WA",Washington,,,
+Scott Cook,Cook,scott-cook,scott-cook,23.954,65,software,Technology,M,1516704901086,"Woodside, CA",California,3319.141,237,237
+Rakesh Gangwal,Gangwal,rakesh-gangwal,rakesh-gangwal,-32.776,64,airline,Service,M,1516704901086,"Miami, FL",Florida,3182.678,251,251
+Tom Golisano,Golisano,tom-golisano,tom-golisano,-0.076,76,payroll services,Service,M,1516704901086,"Naples, FL",Florida,3381.607,230,230
+James Leprino,Leprino,james-leprino,no-pic,0,80,cheese,Food and Beverage,M,1516704901086,"Indian Hills, CO",Colorado,3379.492,231,231
+John Middleton,Middleton,john-middleton,no-pic,0,62,tobacco,Food and Beverage,M,1516704901086,"Bryn Mawr, PA",Pennsylvania,3048,265,265
+Jorge Perez,Perez,jorge-perez,jorge-perez,0,68,real estate,Real Estate,M,1516704901086,"Miami, FL",Florida,2991.26,273,273
+Don Vultaggio,Vultaggio,don-vultaggio,no-pic,,65,AriZona Beverages,Food and Beverage,M,1508260701206,"Port Washington, NY",New York,,,
+Romesh T. Wadhwani,Wadhwani,romesh-t-wadhwani,romesh-t-wadhwani,0,70,software,Technology,M,1516704901086,"Palo Alto, CA",California,3057.6,263,263
+Meg Whitman,Whitman,meg-whitman,meg-whitman,23.644,61,eBay,Technology,F,1516704901086,"Atherton, CA",California,3362.628,233,233
+Oprah Winfrey,Winfrey,oprah-winfrey,oprah-winfrey,8.661,63,TV shows,Media & Entertainment,F,1516704901086,"Montecito, CA",California,2880.719,283,283
+Jim Breyer,Breyer,jim-breyer,jim-breyer,34.68,56,venture capital,Technology,M,1516704901086,"Woodside, CA",California,3045.645,266,266
+"William Conway, Jr.",Conway,william-conway-jr,william-conway-jr,8.899,68,private equity,Finance and Investments,M,1516704901086,"McLean, VA",Virginia,2892.45,280,280
+Daniel D'Aniello,D'Aniello,daniel-daniello,daniel-daniello,8.899,71,private equity,Finance and Investments,M,1516704901086,"Vienna, VA",Virginia,2890.15,281,281
+Gerald Ford,Ford,gerald-ford,gerald-ford,-1.561,73,banking,Finance and Investments,M,1516704901086,"Dallas, TX",Texas,2912.873,278,278
+Joseph Grendys,Grendys,joseph-grendys,joseph-grendys,0,56,poultry processing,Food and Beverage,M,1516704901086,"Chicago, IL",Illinois,3180.901,252,252
+Kieu Hoang,Hoang,kieu-hoang,kieu-hoang,-19.615,73,medical products,Healthcare,M,1516704901087,"Westlake Village, CA",California,2786.409,295,295
+David Rubenstein,Rubenstein,david-rubenstein,david-rubenstein,9.399,68,private equity,Finance and Investments,M,1516704901086,"Bethesda, MD",Maryland,2920.825,277,277
+Michael Rubin,Rubin,michael-rubin,michael-rubin,0,45,online retail,Fashion & Retail,M,1516704901086,"Bryn Mawr, PA",Pennsylvania,2896.7,279,279
+Richard Sands,Sands,richard-sands,no-pic,,66,Food & Beverage,Food and Beverage,M,1508342412629,"Canandaigua, NY",New York,,,
+Thomas Siebel,Siebel,thomas-siebel,thomas-siebel,0,65,business software,Technology,M,1516704901086,"Woodside, CA",California,2857.6,286,286
+Tom Benson,Benson,tom-benson,tom-benson,0,90,New Orleans Saints,Sports,M,1516704901087,"New Orleans, LA",Louisiana,2802,292,292
+Ray Davis,Davis,ray-davis,ray-davis,42.976,76,pipelines,Energy,M,1516704901086,"Dallas, TX",Texas,2870.325,285,285
+"Edward DeBartolo, Jr.",DeBartolo,edward-debartolo-jr,edward-debartolo-jr,19.117,71,shopping centers,Real Estate,M,1516704901086,"Tampa, FL",Florida,2846.939,288,288
+H. Wayne Huizenga,Huizenga,h-wayne-huizenga,h-wayne-huizenga,0.936,80,investments,Finance and Investments,M,1516704901086,"Fort Lauderdale, FL",Florida,2822,289,289
+Johnelle Hunt,Hunt,johnelle-hunt,johnelle-hunt,34.358,86,trucking,Logistics,F,1516704901086,"Fayetteville, AR",Arkansas,3158.252,253,253
+Osman Kibar,Kibar,osman-kibar,osman-kibar,0,46,biotech,Healthcare,M,1516704901087,"La Jolla, CA",California,2756.2,300,300
+David Murdock,Murdock,david-murdock,david-murdock,0,94,"Dole, real estate",Food and Beverage,M,1516704901086,"Ventura, CA",California,2873.47,284,284
+Jeff Rothschild,Rothschild,jeff-rothschild,jeff-rothschild,61.608,63,Facebook,Technology,M,1516704901086,"Palo Alto, CA",California,3013.504,268,268
+Robert Sands,Sands,robert-sands,no-pic,,59,Food & Beverage,Food and Beverage,M,1508348860145,"Canandaigua, NY",New York,,,
+Howard Schultz,Schultz,howard-schultz,howard-schultz,5.343,64,Starbucks,Food and Beverage,M,1516704901086,"Seattle, WA",Washington,2997.802,271,271
+E. Joe Shoen,Shoen,e-joe-shoen,e-joe-shoen,18.965,68,U-Haul,Automotive,M,1516704901087,"Phoenix, AZ",Arizona,2763.396,298,298
+Paul Singer,Singer,paul-singer,paul-singer,0,73,hedge funds,Finance and Investments,M,1516704901086,"New York, NY",New York,2848.5,287,287
+"William Wrigley, Jr.",Wrigley,william-wrigley-jr,william-wrigley-jr,-0.002,54,chewing gum,Food and Beverage,M,1516704901087,"North Palm Beach, FL",Florida,2757.656,299,299
+Mortimer Zuckerman,Zuckerman,mortimer-zuckerman,mortimer-zuckerman,14.245,80,"real estate, media",Real Estate,M,1516704901087,"New York, NY",New York,2773.465,297,297
+Do Won & Jin Sook Chang,Chang,do-won-jin-sook-chang,no-pic,0,62,fashion retail,Fashion & Retail,,1516704901086,"Beverly Hills, CA",California,3235.357,246,246
+Bennett Dorrance,Dorrance,bennett-dorrance,bennett-dorrance,10.991,71,Campbell Soup,Food and Beverage,M,1516704901087,"Paradise Valley, AZ",Arizona,2787.224,294,294
+Doris Fisher,Fisher,doris-fisher,doris-fisher,17.118,86,Gap,Fashion & Retail,F,1516704901086,"San Francisco, CA",California,2935.293,275,275
+John Fisher,Fisher,john-fisher,john-fisher,33.488,56,Gap,Fashion & Retail,M,1516704901086,"San Francisco, CA",California,3017.661,267,267
+Don Hankey,Hankey,don-hankey,don-hankey,0,74,auto loans,Automotive,M,1516704901087,"Malibu, CA",California,2662,307,307
+B. Wayne Hughes,Hughes,b-wayne-hughes,b-wayne-hughes,10.701,84,self storage,Service,M,1516704901087,"Lexington, KY",Kentucky,2642.599,312,312
+James Irsay,Irsay,james-irsay,james-irsay,0,58,Indianapolis Colts,Sports,M,1516704901087,"Carmel, IN",Indiana,2720,304,304
+Jean (Gigi) Pritzker,Pritzker,jean-gigi-pritzker,jean-gigi-pritzker,2.642,55,"hotels, investments",Service,F,1516704901086,"Chicago, IL",Illinois,3048.45,264,264
+Patrick Ryan,Ryan,patrick-ryan,patrick-ryan,8,80,insurance,Finance and Investments,M,1516704901087,"Winnetka, IL",Illinois,2585.8,320,320
+Herbert Simon,Simon,herbert-simon,herbert-simon,15.706,83,real estate,Real Estate,M,1516704901087,"Indianapolis, IN",Indiana,2800.476,293,293
+Jon Stryker,Stryker,jon-stryker,jon-stryker,20.491,59,medical equipment,Healthcare,M,1516704901086,"New York, NY",New York,3073.643,262,262
+Frank VanderSloot,VanderSloot,frank-vandersloot,no-pic,,69,nutrition and wellness products,Fashion & Retail,M,1511814733414,"Idaho Falls, ID",Idaho,,,
+Ty Warner,Warner,ty-warner,ty-warner,0,73,"real estate, plush toys",Real Estate,M,1516704901086,"Oak Brook, IL",Illinois,2994.955,272,272
+Lee Bass,Bass,lee-bass,lee-bass,13.09,61,"oil, investments",Energy,M,1516704901087,"Fort Worth, TX",Texas,2650.175,309,309
+David Bonderman,Bonderman,david-bonderman,david-bonderman,0,75,private equity,Finance and Investments,M,1516704901087,"Fort Worth, TX",Texas,2622,314,314
+Jim Davis,Davis,jim-davis-1,no-pic,0,57,staffing & recruiting,Service,M,1516704901086,"Cockeysville, MD",Maryland,2928.112,276,276
+Sean Parker,Parker,sean-parker,sean-parker,0.408,38,Facebook,Technology,M,1516704901087,"Los Angeles, CA",California,2581.765,321,321
+Bob Parsons,Parsons,bob-parsons,bob-parsons,14.105,67,web hosting,Technology,M,1516704901087,"Scottsdale, AZ",Arizona,2749.344,302,302
+Jay Paul,Paul,jay-paul,jay-paul,0,70,real estate,Real Estate,M,1516704901087,"San Francisco, CA",California,2751.92,301,301
+Penny Pritzker,Pritzker,penny-pritzker,penny-pritzker,1.467,58,"hotels, investments",Finance and Investments,F,1516704901087,"Chicago, IL",Illinois,2810.178,291,291
+Phillip Ruffin,Ruffin,phillip-ruffin,phillip-ruffin,0,82,"casinos, real estate",Diversified,M,1516704901086,"Las Vegas, NV",Nevada,2971.094,274,274
+Peter Thiel,Thiel,peter-thiel,peter-thiel,0.245,50,"Facebook, Palantir",Finance and Investments,M,1516704901087,"San Francisco, CA",California,2527.904,325,325
+Edward Bass,Bass,edward-bass,edward-bass,12.727,72,"oil, investments",Energy,M,1516704901087,"Fort Worth, TX",Texas,2621.053,315,315
+Bert Beveridge,Beveridge,bert-beveridge,no-pic,,56,vodka,Food and Beverage,M,1508260729392,"Austin, TX",Texas,,,
+George Bishop,Bishop,george-bishop,no-pic,0,80,oil & gas,Energy,M,1516704901087,"The Woodlands, TX",Texas,2540,324,324
+Norman Braman,Braman,norman-braman,norman-braman,0,85,"art, car dealerships",Automotive,M,1516704901087,"Miami, FL",Florida,2646.606,310,310
+Kenneth Feld,Feld,kenneth-feld,kenneth-feld,0,69,"circus, live entertainment",Media & Entertainment,M,1516704901087,"Tampa, FL",Florida,2506.037,327,327
+Jonathan Gray,Gray,jonathan-gray,jonathan-gray,12.423,47,investments,Finance and Investments,M,1516704901087,"New York, NY",New York,2593.646,319,319
+Bill Gross,Gross,bill-gross,bill-gross,0,73,investments,Finance and Investments,M,1516704901087,"Laguna Beach, CA",California,2486.7,333,333
+Bill Haslam,Haslam,bill-haslam,bill-haslam,0,59,truck stops,Fashion & Retail,M,1516704901087,"Knoxville, TN",Tennessee,2355.799,348,348
+John Henry,Henry,john-henry,john-henry,0,68,sports,Sports,M,1516704901087,"Boca Raton, FL",Florida,2511.199,326,326
+"Stephen Mandel, Jr.",Mandel,stephen-mandel-jr,no-pic,0,61,hedge funds,Finance and Investments,M,1516704901087,"Greenwich, CT",Connecticut,2550,323,323
+Arturo Moreno,Moreno,arturo-moreno,arturo-moreno,2.092,71,"billboards, Anaheim Angels",Sports,M,1516704901087,"Phoenix, AZ",Arizona,2478.16,336,336
+Richard Peery,Peery,richard-peery,no-pic,0,79,real estate,Real Estate,M,1516704901087,"Palo Alto, CA",California,2599.884,317,317
+Warren Stephens,Stephens,warren-stephens,warren-stephens,9.217,60,investment banking,Finance and Investments,M,1516704901087,"Little Rock, AR",Arkansas,2659.301,308,308
+Mark Walter,Walter,mark-walter,mark-walter,-7.038,57,finance,Finance and Investments,M,1516704901086,"Chicago, IL",Illinois,2882.364,282,282
+Jerry Yang,Yang,jerry-yang,jerry-yang,34.888,49,Yahoo,Technology,M,1516704901087,"Los Altos Hills, CA",California,2664.12,306,306
+Denise York,York,denise-york,denise-york,0,67,San Francisco 49ers,Sports,F,1516704901087,"Youngstown, OH",Ohio,2462,339,339
+George Argyros,Argyros,george-argyros,george-argyros,0.832,80,"real estate, investments",Real Estate,M,1516704901087,"Newport Beach, CA",California,2467.437,337,337
+John Arrillaga,Arrillaga,john-arrillaga,john-arrillaga,0,80,real estate,Real Estate,M,1516704901087,"Portola Valley, CA",California,2501.745,329,329
+Noam Gottesman,Gottesman,noam-gottesman,noam-gottesman,-0.056,56,hedge funds,Finance and Investments,M,1516704901087,"New York, NY",New York,2459.184,340,340
+Jeffrey Lorberbaum,Lorberbaum,jeffrey-lorberbaum,jeffrey-lorberbaum,3.869,63,flooring,Manufacturing,M,1516704901087,"Chattanooga, TN",Tennessee,2736.847,303,303
+C. Dean Metropoulos,Metropoulos,c-dean-metropoulos,c-dean-metropoulos,5.741,71,investments,Food and Beverage,M,1516704901087,"Palm Beach, FL",Florida,2412.366,345,345
+John Pritzker,Pritzker,john-pritzker,john-pritzker,0,65,"hotels, investments",Finance and Investments,M,1516704901087,"San Francisco, CA",California,2429,343,343
+"Julio Mario Santo Domingo, III.",Santo Domingo,julio-mario-santo-domingo-iii,julio-mario-santo-domingo-iii,-13.242,32,beer,Food and Beverage,M,1516704901087,"New York, NY",New York,2351.329,349,349
+Thomas Secunda,Secunda,thomas-secunda,thomas-secunda,0,63,Bloomberg LP,Media & Entertainment,M,1516704901087,"Croton-on-Hudson, NY",New York,2700.472,305,305
+Alexander Spanos,Spanos,alexander-spanos,alexander-spanos,0,94,"real estate, Los Angeles Chargers",Sports,M,1516704901087,"Stockton, CA",California,2447,342,342
+Alan N. Trefler,Trefler,alan-n-trefler,alan-n-trefler,-3.944,61,software,Technology,M,1516704901087,"Brookline, MA",Massachusetts,2090.936,378,378
+Peter Buck,Buck,peter-buck,peter-buck,0,87,Subway sandwich shops,Food and Beverage,M,1516704901087,"Danbury, CT",Connecticut,2505.995,328,328
+Brad Kelley,Kelley,brad-kelley,brad-kelley,0,61,tobacco,Real Estate,M,1516704901087,"Franklin, TN",Tennessee,2296.43,352,352
+Joe Mansueto,Mansueto,joe-mansueto,joe-mansueto,-43.769,61,investment research,Finance and Investments,M,1516704901087,"Chicago, IL",Illinois,2626.942,313,313
+Clayton Mathile,Mathile,clayton-mathile,clayton-mathile,0,77,pet food,Food and Beverage,M,1516704901087,"Brookville, OH",Ohio,2339,350,350
+Larry Robbins,Robbins,larry-robbins,larry-robbins,0,48,hedge funds,Finance and Investments,M,1516704901087,"Alpine, NJ",New Jersey,2300,351,351
+Dan Snyder,Snyder,dan-snyder,dan-snyder,0,53,Washington Redskins,Sports,M,1516704901087,"Potomac, MD",Maryland,2264.05,358,358
+Mark Stevens,Stevens,mark-stevens,mark-stevens,26.423,57,venture capital,Finance and Investments,M,1516704901087,"Atherton, CA",California,2643.126,311,311
+Glen Taylor,Taylor,glen-taylor,glen-taylor,0,76,printing,Service,M,1516704901087,"Mankato, MN",Minnesota,2455.423,341,341
+Elaine Wynn,Wynn,elaine-wynn,elaine-wynn,149.878,75,"casinos, hotels",Gambling & Casinos,F,1516704901086,"Las Vegas, NV",Nevada,2816.26,290,290
+Ron Baron,Baron,ron-baron,ron-baron,0,74,money management,Finance and Investments,M,1516704901087,"New York, NY",New York,2426.225,344,344
+"Chase Coleman, III.",Coleman,chase-coleman-iii,chase-coleman-iii,0,42,hedge fund,Finance and Investments,M,1516704901087,"New York, NY",New York,2160,371,371
+James Coulter,Coulter,james-coulter,james-coulter,0,58,private equity,Finance and Investments,M,1516704901087,"San Francisco, CA",California,2184.5,368,368
+Jack Dorsey,Dorsey,jack-dorsey,jack-dorsey,167.914,41,Twitter,Technology,M,1516704901086,"San Francisco, CA",California,3332.952,236,236
+Alec Gores,Gores,alec-gores,alec-gores,1.587,64,private equity,Finance and Investments,M,1516704901087,"Beverly Hills, CA",California,2164.844,370,370
+Reed Hastings,Hastings,reed-hastings,reed-hastings,57.231,57,Netflix,Media & Entertainment,M,1516704901087,"Santa Cruz, CA",California,2594.867,318,318
+Stanley Hubbard,Hubbard,stanley-hubbard,stanley-hubbard,12.54,84,DirecTV,Media & Entertainment,M,1516704901087,"St. Paul, MN",Minnesota,2215.915,361,361
+Thomas Lee,Lee,thomas-lee,thomas-lee,0,73,private equity,Finance and Investments,M,1516704901087,"New York, NY",New York,2196,366,366
+Eric Lefkofsky,Lefkofsky,eric-lefkofsky,eric-lefkofsky,-7.34,48,Groupon,Technology,M,1516704901087,"Glencoe, IL",Illinois,2269.95,356,356
+Daniel Pritzker,Pritzker,daniel-pritzker,daniel-pritzker,1.016,58,"hotels, investments",Service,M,1516704901087,"Marin County, CA",California,2378.769,347,347
+Stewart Rahr,Rahr,stewart-rahr,stewart-rahr,0,71,drug distribution,Healthcare,M,1516704901087,"New York, NY",New York,2200.875,364,364
+T. Denny Sanford,Sanford,t-denny-sanford,t-denny-sanford,0,82,"banking, credit cards",Finance and Investments,M,1516704901087,"Sioux Falls, SD",South Dakota,2177,369,369
+Charles Simonyi,Simonyi,charles-simonyi,charles-simonyi,34.615,69,Microsoft,Technology,M,1516704901087,"Medina, WA",Washington,2603.855,316,316
+Ted Turner,Turner,ted-turner,ted-turner,0,79,cable television,Media & Entertainment,M,1516704901087,"Atlanta, GA",Georgia,2226.536,360,360
+William Young,Young,william-young,no-pic,0,77,plastics,Manufacturing,M,1516704901087,"Ypsilanti, MI",Michigan,2200,365,365
+S. Daniel Abraham,Abraham,s-daniel-abraham,s-daniel-abraham,0,93,Slim-Fast,Food and Beverage,M,1516704901087,"Palm Beach, FL",Florida,2034,391,391
+Todd Christopher,Christopher,todd-christopher,no-pic,0,55,hair care products,Fashion & Retail,M,1516704901087,"Clearwater, FL",Florida,2090.4,379,379
+Gordon Getty,Getty,gordon-getty,gordon-getty,0,84,Getty Oil,Energy,M,1516704901087,"San Francisco, CA",California,2120.22,373,373
+David Gottesman,Gottesman,david-gottesman,david-gottesman,24.584,91,investments,Finance and Investments,M,1516704901087,"Rye, NY",New York,2492.103,331,331
+W. Herbert Hunt,Hunt,w-herbert-hunt,w-herbert-hunt,0.309,88,oil,Energy,M,1516704901087,"Dallas, TX",Texas,2498.877,330,330
+Bruce Karsh,Karsh,bruce-karsh,bruce-karsh,-3.716,62,private equity,Finance and Investments,M,1516704901087,"Los Angeles, CA",California,2054.204,387,387
+Vinod Khosla,Khosla,vinod-khosla,vinod-khosla,54.734,62,venture capital,Technology,M,1516704901087,"Portola Valley, CA",California,2405.399,346,346
+Howard Marks,Marks,howard-marks,howard-marks,-4.29,71,private equity,Finance and Investments,M,1516704901087,"New York, NY",New York,1993.654,397,397
+"Drayton McLane, Jr.",McLane,drayton-mclane-jr,drayton-mclane-jr,12.539,81,"Wal-Mart, logistics",Fashion & Retail,M,1516704901087,"Temple, TX",Texas,2478.671,335,335
+"H. Ross Perot, Jr.",Perot,h-ross-perot-jr,h-ross-perot-jr,0,59,real estate,Real Estate,M,1516704901087,"Dallas, TX",Texas,2100,376,376
+Kavitark Ram Shriram,Shriram,kavitark-ram-shriram,kavitark-ram-shriram,5.628,61,"venture capital, Google",Technology,M,1516704901087,"Menlo Park, CA",California,2139.231,372,372
+Eric Smidt,Smidt,eric-smidt,no-pic,0,58,hardware stores,Fashion & Retail,M,1516704901087,"Beverly Hills, CA",California,2558.455,322,322
+David Walentas,Walentas,david-walentas,david-walentas,0,79,real estate,Real Estate,M,1516704901087,"New York, NY",New York,2102,375,375
+Ronald Wanek,Wanek,ronald-wanek,ronald-wanek,0,76,furniture,Manufacturing,M,1516704901087,"Saint Petersburg, FL",Florida,2268.989,357,357
+James Clark,Clark,james-clark,james-clark,-2.149,73,"Netscape, investments",Technology,M,1516704901087,"Palm Beach, FL",Florida,2095.458,377,377
+Christopher Cline,Cline,christopher-cline,christopher-cline,7.804,59,coal,Energy,M,1516704901087,"North Palm Beach, FL",Florida,1995.022,396,396
+Glenn Dubin,Dubin,glenn-dubin,glenn-dubin,0,60,hedge funds,Finance and Investments,M,1516704901087,"New York, NY",New York,2017,392,392
+"Frank Fertitta, III.",Fertitta,frank-fertitta-iii,frank-fertitta-iii,4.997,55,"casinos, mixed martial arts",Sports,M,1516704901087,"Las Vegas, NV",Nevada,2207.847,363,363
+Lorenzo Fertitta,Fertitta,lorenzo-fertitta,lorenzo-fertitta,4.997,49,"casinos, mixed martial arts",Sports,M,1516704901087,"Las Vegas, NV",Nevada,2214.647,362,362
+Jane Lauder,Lauder,jane-lauder,jane-lauder,7.391,45,cosmetics,Fashion & Retail,F,1516704901087,"New York, NY",New York,2465.402,338,338
+Aerin Lauder Zinterhofer,Lauder Zinterhofer,aerin-lauder-zinterhofer,aerin-lauder-zinterhofer,7.458,47,cosmetics,Fashion & Retail,F,1516704901087,"New York, NY",New York,2487.702,332,332
+Jeffrey Lurie,Lurie,jeffrey-lurie,jeffrey-lurie,0,66,Philadelphia Eagles,Sports,M,1516704901087,"Wynnewood, PA",Pennsylvania,2038,389,389
+Peter Peterson,Peterson,peter-peterson,peter-peterson,3.095,91,investments,Finance and Investments,M,1516704901087,"New York, NY",New York,2016.095,393,393
+J. Joe Ricketts,Ricketts,j-joe-ricketts,j-joe-ricketts,25.684,76,TD Ameritrade,Finance and Investments,M,1516704901087,"Little Jackson Hole, WY",Wyoming,2294.27,353,353
+John Tyson,Tyson,john-tyson,no-pic,20.899,64,food processing,Food and Beverage,M,1516704901087,"Springdale, AR",Arkansas,2478.686,334,334
+Jon Yarbrough,Yarbrough,jon-yarbrough,jon-yarbrough,0,60,video games,Gambling & Casinos,M,1516704901087,"Franklin, TN",Tennessee,1992,398,398
+David Zalik,Zalik,david-zalik,no-pic,,43,technology,Technology,M,1508260795542,"Atlanta, GA",Georgia,,,
