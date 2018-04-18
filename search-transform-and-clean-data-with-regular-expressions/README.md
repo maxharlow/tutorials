@@ -21,7 +21,7 @@ Support for regular expessions can be found all over the place. We are mostly go
 Getting set up
 --------------
 
-We only need a text editor.
+We only need a text editor. There is more information on what that is and where to get one in this guide:
 
 * [What is a text editor and where do I get one?](https://github.com/maxharlow/tutorials/tree/master/getting-started#a-text-editor)
 

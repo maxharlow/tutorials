@@ -13,11 +13,11 @@ In this tutorial we are going to learn how to use *HTML* to build a simple websi
 Getting set up
 --------------
 
-We first need a text editor.
+We first need a text editor. There is more information on what that is and where to get one in this guide:
 
 * [What is a text editor and where do I get one?](https://github.com/maxharlow/tutorials/tree/master/getting-started#a-text-editor)
 
-We also need to install Git and Node from the terminal.
+We also need to install Git and Node from the terminal. There are details on how to install such tools in these two guides:
 
 * [What and where is the terminal?](https://github.com/maxharlow/tutorials/tree/master/getting-started#the-terminal)
 * [How should I install things?](https://github.com/maxharlow/tutorials/tree/master/getting-started#installing-things)
@@ -54,7 +54,7 @@ We are not actually going to be using Node in this tutorial, however Node comes 
 
     $ npm install -g live-server
 
-You should also create a new project directory for the files we are going to be creating in this tutorial.
+You should also create a new project directory for the files we are going to be creating in this tutorial. If you've not done this before, try following these two guides:
 
 * [How do I use the terminal?](https://github.com/maxharlow/tutorials/tree/master/getting-started#essentials-of-the-terminal)
 * [How should I organise my files?](https://github.com/maxharlow/tutorials/tree/master/getting-started#organising-your-files)

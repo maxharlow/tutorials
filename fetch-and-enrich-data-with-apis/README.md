@@ -13,11 +13,11 @@ In this tutorial we are going to cover what an API is, and how you can use the O
 Getting set up
 --------------
 
-We first need a text editor.
+We first need a text editor. There is more information on what that is and where to get one in this guide:
 
 * [What is a text editor and where do I get one?](https://github.com/maxharlow/tutorials/tree/master/getting-started#a-text-editor)
 
-We also need to install Python from the terminal.
+We also need to install Python. There are details on how to install such tools in these two guides:
 
 * [What and where is the terminal?](https://github.com/maxharlow/tutorials/tree/master/getting-started#the-terminal)
 * [How should I install things?](https://github.com/maxharlow/tutorials/tree/master/getting-started#installing-things)
@@ -46,7 +46,7 @@ In the terminal, use `apt-get` to install Python:
 
 <hr>
 
-You should also create a new project directory for the files we are going to be creating in this tutorial.
+You should also create a new project directory for the files we are going to be creating in this tutorial. If you've not done this before, try following these two guides:
 
 * [How do I use the terminal?](https://github.com/maxharlow/tutorials/tree/master/getting-started#essentials-of-the-terminal)
 * [How should I organise my files?](https://github.com/maxharlow/tutorials/tree/master/getting-started#organising-your-files)

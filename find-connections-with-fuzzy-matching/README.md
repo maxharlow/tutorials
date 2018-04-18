@@ -3,7 +3,7 @@ Find connections with fuzzy matching
 
 In this tutorial we are going to take a couple of different datasets, and then find the names that are listed in both, even when those names aren't written in quite the same way. To do this we'll apply a technique called *fuzzy matching*, using a tool called [CSV Match](https://github.com/maxharlow/csvmatch).
 
-**Fuzzy matching**: Matching up two sets of names of things that aren't quite the same, but refer to the same thing. Typically in journalism that means names of people or names of companies.
+***Fuzzy matching***: Matching up two sets of names of things that aren't quite the same, but refer to the same thing. Typically in journalism that means names of people or names of companies.
 
 Let's look at a real example. How many people are listed here?
 
@@ -28,7 +28,7 @@ You may have noticed a pattern in these examples -- what we have here is a repea
 Getting set up
 --------------
 
-We also need to install Python and CSV Match from the terminal.
+We need to install Python and CSV Match. There are details on how to install such tools in these two guides:
 
 * [What and where is the terminal?](https://github.com/maxharlow/tutorials/tree/master/getting-started#the-terminal)
 * [How should I install things?](https://github.com/maxharlow/tutorials/tree/master/getting-started#installing-things)
@@ -61,7 +61,7 @@ We are not actually going to be using Python in this tutorial, however Python co
 
     $ pip3 install csvmatch
 
-You should also create a new project directory for the files we are going to be creating in this tutorial.
+You should also create a new project directory for the files we are going to be using in this tutorial. If you've not done this before, try following these two guides:
 
 * [How do I use the terminal?](https://github.com/maxharlow/tutorials/tree/master/getting-started#essentials-of-the-terminal)
 * [How should I organise my files?](https://github.com/maxharlow/tutorials/tree/master/getting-started#organising-your-files)
@@ -75,7 +75,7 @@ From the terminal, make sure you are in your projects directory. Then run:
 Getting the data
 ----------------
 
-We have six sets of data we're going to be looking at. Download each of them.
+We have six sets of data we're going to be looking at. Download each of them by right clicking the download link and then 'save link as'.
 
 1. Forbes world billionaires list. [The ~2,000 richest people in the world.](https://www.forbes.com/billionaires/list) **[Download here.](https://raw.githubusercontent.com/maxharlow/tutorials/master/find-connections-with-fuzzy-matching/forbes-billionaires.csv)**
 2. Forbes American billionaires list (aka. the Forbes 400). [The ~400 richest people in America.](https://www.forbes.com/forbes-400/list) **[Download here.](https://raw.githubusercontent.com/maxharlow/tutorials/master/find-connections-with-fuzzy-matching/forbes-forbes-400.csv)**
@@ -83,7 +83,6 @@ We have six sets of data we're going to be looking at. Download each of them.
 4. CIA world leaders list. [Almost 6,000 heads of state and cabinet members from governments around the world, excluding the US.](https://www.cia.gov/library/publications/world-leaders-1) **[Download here.](https://raw.githubusercontent.com/maxharlow/tutorials/master/find-connections-with-fuzzy-matching/cia-world-leaders.csv)**
 5. Politico's unauthorised White House visitors list. [The ~3,600 names from a crowdsourced project to list all who have visited the Trump White House.](https://www.politico.com/interactives/databases/trump-white-house-visitor-logs-and-records/index.html) **[Download here.](https://raw.githubusercontent.com/maxharlow/tutorials/master/find-connections-with-fuzzy-matching/white-house-visitors.csv)**
 6. The UN sanctions list. [People, groups, and companies sanctioned by the United Nations.](https://www.un.org/sc/suborg/en/sanctions/un-sc-consolidated-list) **[Download here.](https://raw.githubusercontent.com/maxharlow/tutorials/master/find-connections-with-fuzzy-matching/un-sanction.csv)**
-
 
 Once they're downloaded, move them into the projects directory you just made. Then check they're all in the right place from the terminal:
 
@@ -161,7 +160,7 @@ So far when we've been running exact matches, they really have been exact -- cas
 * Ignore non-latin characters (é, å, ß, etc)
 * Ignore the order the words are in
 
-These aren't the full-blown fuzzy algorithms that we'll be seeing later. However combining these 'naive' approaches will often give you some pretty good matches. This approach tends to be relatively fast, too.
+These aren't the full-blown fuzzy algorithms that we'll see later. However combining these 'naive' approaches will often give you some pretty good matches. This approach tends to be relatively fast, too.
 
 Let's see an example:
 
@@ -186,7 +185,7 @@ Let's try a straight match, as we did before, and see if we get any results:
 
 You should see... nothing. Zero matches. Perhaps there aren't any. Or perhaps we just need to apply some fuzziness? We saw that surnames were written in all-capitals in the world leaders list, but not in the White House visitors list, so that's probably the reason we're not seeing any results. Let's try making our match case-insensitive by adding the `--ignore-case` *flag*. Let's also put the output into a file too:
 
-**Flag**: A flag is an extra option given to a command line program to turn on a feature, or give it extra information. Often the same flag can be written two ways: a long way, starting with two hypens, such as `--ignore-case`, and a short way, with just a single hyphen followed by a single letter, such as `-i`. If you have multiple flags written the short way you can combine them with a single hypen to save even more space -- so `-i -a` could also be written `-ia`.
+***Flag***: A flag is an extra option given to a command line program to turn on a feature, or give it extra information. Often the same flag can be written two ways: a long way, starting with two hyphens, such as `--ignore-case`, and a short way, with just a single hyphen followed by a single letter, such as `-i`. If you have multiple flags written the short way you can combine them with a single hyphen to save even more space -- so `-i -a` could also be written `-ia`.
 
     $ csvmatch \
 	    cia-world-leaders.csv \
@@ -216,7 +215,9 @@ If you compare the number of results in the new file to the one before, you shou
 Fuzzy algorithm #1: Levenshtein
 -------------------------------
 
-Now we've covered the basics, let's look at a 'proper' fuzzy matching algorithm.
+Now we've covered the basics, let's look at a 'proper' fuzzy matching *algorithm*.
+
+***Algorithm***: A particular recipe or approach for a computer to do something. Different algorithms can try to achieve the same thing but do it in different ways, and therefore be bettor or worse at the task. The different approaches mean that they will also differ in how fast they can do the task, how much memory they need to do it, and so on.
 
 The most common approach to doing this is to count the number of additions, removals, and substitutions that are needed to change one name into another, giving us a score at the end of how many changes had to be made. This is called the *edit distance*.
 
@@ -244,7 +245,7 @@ Another approach is to look at the phonetics of how names are typically pronounc
 
 For example, if it were comparing `Catherine` with `Kathryn` it'd be a match, but comparing `Dave` with `David` would not be a match.
 
-This approach works pretty well, and catches things that wouldn't be caught with edit-distance type approaches -- particularly where information has been taranscribed from speech, or when you have names written in another language that have been transliterated into English. However, not having a scoring number means you can't adjust how sensitive it is. Worse, Metaphone is focused on English pronunciation of traditional English-language people names. There are some other algorithms that focus on other languages, but you have to pick the right one for your data, and if it's mixed of names from different backgrounds it might not be so effective.
+This approach works pretty well, and catches things that wouldn't be caught with edit-distance type approaches -- particularly where information has been transcribed from speech, or when you have names written in another language that have been transliterated into English. However, not having a scoring number means you can't adjust how sensitive it is. Worse, Metaphone is focused on English pronunciation of traditional English-language people names. There are some other algorithms that focus on other languages, but you have to pick the right one for your data, and if it's mixed of names from different backgrounds it might not be so effective.
 
 Let's use this approach to answer this question: which world leaders from the CIA list are on the United Nations sanctions list? We're going to use the `--fuzzy` flag again, but specify the `metaphone` algorithm:
 
@@ -275,4 +276,4 @@ Let's return to one of our earlier questions to see what results we can get with
 	    --fuzzy bilenko \
 	    > leaders-visiting-trump-3.csv
 
-After running that it should start asking you questions! Answer them with `y` for yes, `n` for no. The more you answer of these, the better the match will be. However you should aim to get 10-15 of both yes and no answers. When you've done that or just fed up, press `f` to finish.
+After running that it should start asking you questions! Answer them with `y` for yes, `n` for no. The more you answer of these, the better the match will be. However, you should aim to get 10-15 of both yes and no answers. When you've done that or just fed up, press `f` to finish.

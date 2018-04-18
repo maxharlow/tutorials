@@ -15,7 +15,7 @@ The relational database we are going to be using in this tutorial is [Postgres](
 Getting set up
 --------------
 
-We need to install Postgres from the terminal (except on Windows).
+We need to install Postgres from the terminal (except on Windows). There are details on how to install such tools in these two guides:
 
 * [What and where is the terminal?](https://github.com/maxharlow/tutorials/tree/master/getting-started#the-terminal)
 * [How should I install things?](https://github.com/maxharlow/tutorials/tree/master/getting-started#installing-things)
