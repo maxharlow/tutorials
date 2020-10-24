@@ -165,7 +165,7 @@ Remove the last line of the file that we added before and replace it with:
 print(from_file(sys.argv[1]))
 ```
 
-Now let's try running our program again, but this time with a file as the input. Download [this list of companies](https://raw.githubusercontent.com/maxharlow/tutorials/master/opencorporates-api/company-numbers.csv) and move it into your project directory. This is a list of all the companies who donated to the Vote Leave campaign during the EU referendum. But who were they?
+Now let's try running our program again, but this time with a file as the input. Download [this list of companies](https://raw.githubusercontent.com/maxharlow/tutorials/master/fetch-and-enrich-data-with-apis/company-numbers.csv) and move it into your project directory. This is a list of all the companies who donated to the Vote Leave campaign during the EU referendum. But who were they?
 
 To find out go back to the terminal and run:
 
